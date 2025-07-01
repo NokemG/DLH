@@ -1,0 +1,13694 @@
+[
+  {
+    "position": [
+      0,
+      2.5,
+      50
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 80,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      65,
+      2.5,
+      -20
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 90
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -65,
+      2.5,
+      -20
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 90
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -62.5
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2000"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2002"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2004"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2006"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2008"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2010"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2012"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2014"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2020"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2022"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2024"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2026"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2028"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2030"
+  },
+  {
+    "position": [
+      62.5,
+      7.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2032"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2003"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2005"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2007"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2009"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2011"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2013"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2015"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2017"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2019"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2021"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2023"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2025"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2027"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2029"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2031"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2033"
+  },
+  {
+    "position": [
+      67.5,
+      7.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2035"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -52.5
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      62.5,
+      30,
+      -20
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 5,
+      "h": 50,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2100"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2102"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2104"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2106"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2108"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2110"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2112"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2114"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2120"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2122"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2124"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2126"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2128"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2130"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2132"
+  },
+  {
+    "position": [
+      62.5,
+      12.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2134"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2135"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2133"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2131"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2129"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2127"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2125"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2123"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2121"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2119"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2117"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2115"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2113"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2111"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2109"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2107"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2105"
+  },
+  {
+    "position": [
+      67.5,
+      12.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2103"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2200"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2202"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2204"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2206"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2208"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2210"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2212"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2214"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2220"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2222"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2224"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2226"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2228"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2230"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2232"
+  },
+  {
+    "position": [
+      62.5,
+      17.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2234"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2235"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2233"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2231"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2229"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2227"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2225"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2223"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2221"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2219"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2217"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2215"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2213"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2211"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2209"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2207"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2205"
+  },
+  {
+    "position": [
+      67.5,
+      17.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2203"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2300"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2302"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2304"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2306"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2308"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2310"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2312"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2314"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2320"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2322"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2324"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2326"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2328"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2330"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2332"
+  },
+  {
+    "position": [
+      62.5,
+      22.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2334"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2335"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2333"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2331"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2329"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2327"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2325"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2323"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2321"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2319"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2317"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2315"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2313"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2311"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2309"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2307"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2305"
+  },
+  {
+    "position": [
+      67.5,
+      22.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2303"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2400"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2402"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2404"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2406"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2408"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2410"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2412"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2414"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2420"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2422"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2424"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2426"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2428"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2430"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2432"
+  },
+  {
+    "position": [
+      62.5,
+      27.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2434"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2435"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2433"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2431"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2429"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2427"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2425"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2423"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2421"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2419"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2417"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2415"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2413"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2411"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2409"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2407"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2405"
+  },
+  {
+    "position": [
+      67.5,
+      27.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2403"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2500"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2502"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2504"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2506"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2508"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2510"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2512"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2514"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2520"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2522"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2524"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2526"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2528"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2530"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2532"
+  },
+  {
+    "position": [
+      62.5,
+      32.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2534"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2535"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2533"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2531"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2529"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2527"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2525"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2523"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2521"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2519"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2517"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2515"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2513"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2511"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2509"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2507"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2505"
+  },
+  {
+    "position": [
+      67.5,
+      32.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2503"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2600"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2602"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2604"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2606"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2608"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2610"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2612"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2614"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2620"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2622"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2624"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2626"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2628"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2630"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2632"
+  },
+  {
+    "position": [
+      62.5,
+      37.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2634"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2635"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2633"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2631"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2629"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2627"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2625"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2623"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2621"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2619"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2617"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2615"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2613"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2611"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2609"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2607"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2605"
+  },
+  {
+    "position": [
+      67.5,
+      37.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2603"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2700"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2702"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2704"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -45
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2708"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2710"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2712"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2714"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2720"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      -5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2724"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2726"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2728"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      15
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2730"
+  },
+  {
+    "position": [
+      62.5,
+      42.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2734"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2735"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      15
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2731"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2729"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2727"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2725"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2723"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2721"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2719"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2717"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2715"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2713"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2711"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -45
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2709"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2705"
+  },
+  {
+    "position": [
+      67.5,
+      42.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2703"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2800"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2802"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2804"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -45
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2808"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2810"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2812"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2814"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2820"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      -5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2824"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2826"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2828"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      15
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2830"
+  },
+  {
+    "position": [
+      62.5,
+      47.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2834"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2835"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      15
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2831"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2829"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2827"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2825"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2823"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2821"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2819"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2817"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2815"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2813"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2811"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -45
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2809"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2805"
+  },
+  {
+    "position": [
+      67.5,
+      47.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2803"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2900"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2902"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2904"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -45
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2908"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2910"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2912"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2914"
+  },
+  {
+    "position": [
+      62.5,
+      52.5,
+      5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 40
+    },
+    "roomNumber": "2920"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2935"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      15
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2931"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2929"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2927"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2925"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2923"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2921"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2919"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2917"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2915"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2913"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2911"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -45
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2909"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2905"
+  },
+  {
+    "position": [
+      67.5,
+      52.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2903"
+  },
+  {
+    "position": [
+      37.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2036"
+  },
+  {
+    "position": [
+      32.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2038"
+  },
+  {
+    "position": [
+      27.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2040"
+  },
+  {
+    "position": [
+      22.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2042"
+  },
+  {
+    "position": [
+      17.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2044"
+  },
+  {
+    "position": [
+      12.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2046"
+  },
+  {
+    "position": [
+      7.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2048"
+  },
+  {
+    "position": [
+      2.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2050"
+  },
+  {
+    "position": [
+      -2.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2052"
+  },
+  {
+    "position": [
+      -7.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2054"
+  },
+  {
+    "position": [
+      -12.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2056"
+  },
+  {
+    "position": [
+      -17.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2058"
+  },
+  {
+    "position": [
+      -22.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2060"
+  },
+  {
+    "position": [
+      -27.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2062"
+  },
+  {
+    "position": [
+      -32.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2064"
+  },
+  {
+    "position": [
+      -37.5,
+      7.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2066"
+  },
+  {
+    "position": [
+      -37.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2067"
+  },
+  {
+    "position": [
+      -32.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2065"
+  },
+  {
+    "position": [
+      -27.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2063"
+  },
+  {
+    "position": [
+      -22.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2061"
+  },
+  {
+    "position": [
+      -17.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2059"
+  },
+  {
+    "position": [
+      -12.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2057"
+  },
+  {
+    "position": [
+      -7.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2055"
+  },
+  {
+    "position": [
+      -2.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2053"
+  },
+  {
+    "position": [
+      2.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2051"
+  },
+  {
+    "position": [
+      7.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2049"
+  },
+  {
+    "position": [
+      12.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2047"
+  },
+  {
+    "position": [
+      17.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2045"
+  },
+  {
+    "position": [
+      22.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2043"
+  },
+  {
+    "position": [
+      27.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2041"
+  },
+  {
+    "position": [
+      32.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2039"
+  },
+  {
+    "position": [
+      37.5,
+      7.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2037"
+  },
+  {
+    "position": [
+      37.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2136"
+  },
+  {
+    "position": [
+      32.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2138"
+  },
+  {
+    "position": [
+      27.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2140"
+  },
+  {
+    "position": [
+      22.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2142"
+  },
+  {
+    "position": [
+      17.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2144"
+  },
+  {
+    "position": [
+      12.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2146"
+  },
+  {
+    "position": [
+      7.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2148"
+  },
+  {
+    "position": [
+      2.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2150"
+  },
+  {
+    "position": [
+      -2.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2152"
+  },
+  {
+    "position": [
+      -7.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2154"
+  },
+  {
+    "position": [
+      -12.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2156"
+  },
+  {
+    "position": [
+      -17.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2158"
+  },
+  {
+    "position": [
+      -22.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2160"
+  },
+  {
+    "position": [
+      -27.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2162"
+  },
+  {
+    "position": [
+      -32.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2164"
+  },
+  {
+    "position": [
+      -37.5,
+      12.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2166"
+  },
+  {
+    "position": [
+      -37.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2167"
+  },
+  {
+    "position": [
+      -32.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2165"
+  },
+  {
+    "position": [
+      -27.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2163"
+  },
+  {
+    "position": [
+      -22.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2161"
+  },
+  {
+    "position": [
+      -17.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2159"
+  },
+  {
+    "position": [
+      -12.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2157"
+  },
+  {
+    "position": [
+      -7.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2155"
+  },
+  {
+    "position": [
+      -2.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2153"
+  },
+  {
+    "position": [
+      2.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2151"
+  },
+  {
+    "position": [
+      7.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2149"
+  },
+  {
+    "position": [
+      12.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2147"
+  },
+  {
+    "position": [
+      17.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2145"
+  },
+  {
+    "position": [
+      22.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2143"
+  },
+  {
+    "position": [
+      27.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2141"
+  },
+  {
+    "position": [
+      32.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2139"
+  },
+  {
+    "position": [
+      37.5,
+      12.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2137"
+  },
+  {
+    "position": [
+      37.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2236"
+  },
+  {
+    "position": [
+      32.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2238"
+  },
+  {
+    "position": [
+      27.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2240"
+  },
+  {
+    "position": [
+      22.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2242"
+  },
+  {
+    "position": [
+      17.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2244"
+  },
+  {
+    "position": [
+      12.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2246"
+  },
+  {
+    "position": [
+      7.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2248"
+  },
+  {
+    "position": [
+      2.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2250"
+  },
+  {
+    "position": [
+      -2.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2252"
+  },
+  {
+    "position": [
+      -7.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2254"
+  },
+  {
+    "position": [
+      -12.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2256"
+  },
+  {
+    "position": [
+      -17.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2258"
+  },
+  {
+    "position": [
+      -22.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2260"
+  },
+  {
+    "position": [
+      -27.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2262"
+  },
+  {
+    "position": [
+      -32.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2264"
+  },
+  {
+    "position": [
+      -37.5,
+      17.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2266"
+  },
+  {
+    "position": [
+      -37.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2267"
+  },
+  {
+    "position": [
+      -32.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2265"
+  },
+  {
+    "position": [
+      -27.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2263"
+  },
+  {
+    "position": [
+      -22.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2261"
+  },
+  {
+    "position": [
+      -17.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2259"
+  },
+  {
+    "position": [
+      -12.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2257"
+  },
+  {
+    "position": [
+      -7.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2255"
+  },
+  {
+    "position": [
+      -2.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2253"
+  },
+  {
+    "position": [
+      2.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2251"
+  },
+  {
+    "position": [
+      7.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2249"
+  },
+  {
+    "position": [
+      12.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2247"
+  },
+  {
+    "position": [
+      17.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2245"
+  },
+  {
+    "position": [
+      22.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2243"
+  },
+  {
+    "position": [
+      27.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2241"
+  },
+  {
+    "position": [
+      32.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2239"
+  },
+  {
+    "position": [
+      37.5,
+      17.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2237"
+  },
+  {
+    "position": [
+      37.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2336"
+  },
+  {
+    "position": [
+      32.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2338"
+  },
+  {
+    "position": [
+      27.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2340"
+  },
+  {
+    "position": [
+      22.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2342"
+  },
+  {
+    "position": [
+      17.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2344"
+  },
+  {
+    "position": [
+      12.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2346"
+  },
+  {
+    "position": [
+      7.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2348"
+  },
+  {
+    "position": [
+      2.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2350"
+  },
+  {
+    "position": [
+      -2.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2352"
+  },
+  {
+    "position": [
+      -7.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2354"
+  },
+  {
+    "position": [
+      -12.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2356"
+  },
+  {
+    "position": [
+      -17.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2358"
+  },
+  {
+    "position": [
+      -22.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2360"
+  },
+  {
+    "position": [
+      -27.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2362"
+  },
+  {
+    "position": [
+      -32.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2364"
+  },
+  {
+    "position": [
+      -37.5,
+      22.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2366"
+  },
+  {
+    "position": [
+      -37.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2367"
+  },
+  {
+    "position": [
+      -32.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2365"
+  },
+  {
+    "position": [
+      -27.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2363"
+  },
+  {
+    "position": [
+      -22.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2361"
+  },
+  {
+    "position": [
+      -17.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2359"
+  },
+  {
+    "position": [
+      -12.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2357"
+  },
+  {
+    "position": [
+      -7.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2355"
+  },
+  {
+    "position": [
+      -2.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2353"
+  },
+  {
+    "position": [
+      2.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2351"
+  },
+  {
+    "position": [
+      7.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2349"
+  },
+  {
+    "position": [
+      12.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2347"
+  },
+  {
+    "position": [
+      17.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2345"
+  },
+  {
+    "position": [
+      22.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2343"
+  },
+  {
+    "position": [
+      27.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2341"
+  },
+  {
+    "position": [
+      32.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2339"
+  },
+  {
+    "position": [
+      37.5,
+      22.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2337"
+  },
+  {
+    "position": [
+      37.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2436"
+  },
+  {
+    "position": [
+      32.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2438"
+  },
+  {
+    "position": [
+      27.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2440"
+  },
+  {
+    "position": [
+      22.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2442"
+  },
+  {
+    "position": [
+      17.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2444"
+  },
+  {
+    "position": [
+      12.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2446"
+  },
+  {
+    "position": [
+      7.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2448"
+  },
+  {
+    "position": [
+      2.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2450"
+  },
+  {
+    "position": [
+      -2.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2452"
+  },
+  {
+    "position": [
+      -7.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2454"
+  },
+  {
+    "position": [
+      -12.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2456"
+  },
+  {
+    "position": [
+      -17.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2458"
+  },
+  {
+    "position": [
+      -22.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2460"
+  },
+  {
+    "position": [
+      -27.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2462"
+  },
+  {
+    "position": [
+      -32.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2464"
+  },
+  {
+    "position": [
+      -37.5,
+      27.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2466"
+  },
+  {
+    "position": [
+      -37.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2467"
+  },
+  {
+    "position": [
+      -32.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2465"
+  },
+  {
+    "position": [
+      -27.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2463"
+  },
+  {
+    "position": [
+      -22.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2461"
+  },
+  {
+    "position": [
+      -17.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2459"
+  },
+  {
+    "position": [
+      -12.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2457"
+  },
+  {
+    "position": [
+      -7.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2455"
+  },
+  {
+    "position": [
+      -2.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2453"
+  },
+  {
+    "position": [
+      2.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2451"
+  },
+  {
+    "position": [
+      7.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2449"
+  },
+  {
+    "position": [
+      12.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2447"
+  },
+  {
+    "position": [
+      17.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2445"
+  },
+  {
+    "position": [
+      22.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2443"
+  },
+  {
+    "position": [
+      27.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2441"
+  },
+  {
+    "position": [
+      32.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2439"
+  },
+  {
+    "position": [
+      37.5,
+      27.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2437"
+  },
+  {
+    "position": [
+      37.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2536"
+  },
+  {
+    "position": [
+      32.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2538"
+  },
+  {
+    "position": [
+      27.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2540"
+  },
+  {
+    "position": [
+      22.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2542"
+  },
+  {
+    "position": [
+      17.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2544"
+  },
+  {
+    "position": [
+      12.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2546"
+  },
+  {
+    "position": [
+      7.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2548"
+  },
+  {
+    "position": [
+      2.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2550"
+  },
+  {
+    "position": [
+      -2.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2552"
+  },
+  {
+    "position": [
+      -7.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2554"
+  },
+  {
+    "position": [
+      -12.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2556"
+  },
+  {
+    "position": [
+      -17.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2558"
+  },
+  {
+    "position": [
+      -22.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2560"
+  },
+  {
+    "position": [
+      -27.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2562"
+  },
+  {
+    "position": [
+      -32.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2564"
+  },
+  {
+    "position": [
+      -37.5,
+      32.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2566"
+  },
+  {
+    "position": [
+      -37.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2567"
+  },
+  {
+    "position": [
+      -32.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2565"
+  },
+  {
+    "position": [
+      -27.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2563"
+  },
+  {
+    "position": [
+      -22.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2561"
+  },
+  {
+    "position": [
+      -17.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2559"
+  },
+  {
+    "position": [
+      -12.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2557"
+  },
+  {
+    "position": [
+      -7.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2555"
+  },
+  {
+    "position": [
+      -2.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2553"
+  },
+  {
+    "position": [
+      2.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2551"
+  },
+  {
+    "position": [
+      7.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2549"
+  },
+  {
+    "position": [
+      12.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2547"
+  },
+  {
+    "position": [
+      17.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2545"
+  },
+  {
+    "position": [
+      22.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2543"
+  },
+  {
+    "position": [
+      27.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2541"
+  },
+  {
+    "position": [
+      32.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2539"
+  },
+  {
+    "position": [
+      37.5,
+      32.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2537"
+  },
+  {
+    "position": [
+      37.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2636"
+  },
+  {
+    "position": [
+      32.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2638"
+  },
+  {
+    "position": [
+      27.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2640"
+  },
+  {
+    "position": [
+      22.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2642"
+  },
+  {
+    "position": [
+      17.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2644"
+  },
+  {
+    "position": [
+      12.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2646"
+  },
+  {
+    "position": [
+      7.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2648"
+  },
+  {
+    "position": [
+      2.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2650"
+  },
+  {
+    "position": [
+      -2.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2652"
+  },
+  {
+    "position": [
+      -7.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2654"
+  },
+  {
+    "position": [
+      -12.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2656"
+  },
+  {
+    "position": [
+      -17.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2658"
+  },
+  {
+    "position": [
+      -22.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2660"
+  },
+  {
+    "position": [
+      -27.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2662"
+  },
+  {
+    "position": [
+      -32.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2664"
+  },
+  {
+    "position": [
+      -37.5,
+      37.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2666"
+  },
+  {
+    "position": [
+      -37.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2667"
+  },
+  {
+    "position": [
+      -32.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2665"
+  },
+  {
+    "position": [
+      -27.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2663"
+  },
+  {
+    "position": [
+      -22.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2661"
+  },
+  {
+    "position": [
+      -17.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2659"
+  },
+  {
+    "position": [
+      -12.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2657"
+  },
+  {
+    "position": [
+      -7.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2655"
+  },
+  {
+    "position": [
+      -2.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2653"
+  },
+  {
+    "position": [
+      2.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2651"
+  },
+  {
+    "position": [
+      7.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2649"
+  },
+  {
+    "position": [
+      12.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2647"
+  },
+  {
+    "position": [
+      17.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2645"
+  },
+  {
+    "position": [
+      22.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2643"
+  },
+  {
+    "position": [
+      27.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2641"
+  },
+  {
+    "position": [
+      32.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2639"
+  },
+  {
+    "position": [
+      37.5,
+      37.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2637"
+  },
+  {
+    "position": [
+      37.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2736"
+  },
+  {
+    "position": [
+      32.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2738"
+  },
+  {
+    "position": [
+      27.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2740"
+  },
+  {
+    "position": [
+      22.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2742"
+  },
+  {
+    "position": [
+      17.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2744"
+  },
+  {
+    "position": [
+      12.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2746"
+  },
+  {
+    "position": [
+      7.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2748"
+  },
+  {
+    "position": [
+      2.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2750"
+  },
+  {
+    "position": [
+      -2.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2752"
+  },
+  {
+    "position": [
+      -7.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2754"
+  },
+  {
+    "position": [
+      -12.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2756"
+  },
+  {
+    "position": [
+      -17.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2758"
+  },
+  {
+    "position": [
+      -22.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2760"
+  },
+  {
+    "position": [
+      -27.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2762"
+  },
+  {
+    "position": [
+      -32.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2764"
+  },
+  {
+    "position": [
+      -37.5,
+      42.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2766"
+  },
+  {
+    "position": [
+      37.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2767"
+  },
+  {
+    "position": [
+      32.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2765"
+  },
+  {
+    "position": [
+      27.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2763"
+  },
+  {
+    "position": [
+      22.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2761"
+  },
+  {
+    "position": [
+      17.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2759"
+  },
+  {
+    "position": [
+      12.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2757"
+  },
+  {
+    "position": [
+      7.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2755"
+  },
+  {
+    "position": [
+      2.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2753"
+  },
+  {
+    "position": [
+      -2.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2751"
+  },
+  {
+    "position": [
+      -7.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2749"
+  },
+  {
+    "position": [
+      -12.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2747"
+  },
+  {
+    "position": [
+      -17.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2745"
+  },
+  {
+    "position": [
+      -22.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2743"
+  },
+  {
+    "position": [
+      -27.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2741"
+  },
+  {
+    "position": [
+      -32.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2739"
+  },
+  {
+    "position": [
+      -37.5,
+      42.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2737"
+  },
+  {
+    "position": [
+      37.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2836"
+  },
+  {
+    "position": [
+      32.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2838"
+  },
+  {
+    "position": [
+      27.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2840"
+  },
+  {
+    "position": [
+      22.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2842"
+  },
+  {
+    "position": [
+      17.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2844"
+  },
+  {
+    "position": [
+      12.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2846"
+  },
+  {
+    "position": [
+      7.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2848"
+  },
+  {
+    "position": [
+      2.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2850"
+  },
+  {
+    "position": [
+      -2.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2852"
+  },
+  {
+    "position": [
+      -7.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2854"
+  },
+  {
+    "position": [
+      -15,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2856"
+  },
+  {
+    "position": [
+      -22.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2860"
+  },
+  {
+    "position": [
+      -27.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2862"
+  },
+  {
+    "position": [
+      -32.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2864"
+  },
+  {
+    "position": [
+      -37.5,
+      47.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2866"
+  },
+  {
+    "position": [
+      -37.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2867"
+  },
+  {
+    "position": [
+      -32.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2865"
+  },
+  {
+    "position": [
+      -25,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2863"
+  },
+  {
+    "position": [
+      -15,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2857"
+  },
+  {
+    "position": [
+      -7.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2855"
+  },
+  {
+    "position": [
+      -2.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2853"
+  },
+  {
+    "position": [
+      2.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2851"
+  },
+  {
+    "position": [
+      7.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2849"
+  },
+  {
+    "position": [
+      12.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2847"
+  },
+  {
+    "position": [
+      17.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2845"
+  },
+  {
+    "position": [
+      22.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2843"
+  },
+  {
+    "position": [
+      27.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2841"
+  },
+  {
+    "position": [
+      32.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2839"
+  },
+  {
+    "position": [
+      37.5,
+      47.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2837"
+  },
+  {
+    "position": [
+      30,
+      52.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2936"
+  },
+  {
+    "position": [
+      7.5,
+      52.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 25,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2950"
+  },
+  {
+    "position": [
+      -7.5,
+      52.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2954"
+  },
+  {
+    "position": [
+      -15,
+      52.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2956"
+  },
+  {
+    "position": [
+      -30,
+      52.5,
+      47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2960"
+  },
+  {
+    "position": [
+      -37.5,
+      52.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2967"
+  },
+  {
+    "position": [
+      -32.5,
+      52.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2965"
+  },
+  {
+    "position": [
+      -25,
+      52.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2963"
+  },
+  {
+    "position": [
+      -10,
+      52.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2957"
+  },
+  {
+    "position": [
+      20,
+      52.5,
+      52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 40,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2937"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2068"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2070"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2072"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2074"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2076"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2078"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2080"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2082"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2084"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2086"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2088"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2090"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2092"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2094"
+  },
+  {
+    "position": [
+      -62.5,
+      7.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2096"
+  },
+  {
+    "position": [
+      -65,
+      7.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2098"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2093"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2091"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2089"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2087"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2085"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2083"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2081"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2079"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2077"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2075"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2073"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2071"
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2069"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2168"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2170"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2172"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2174"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2176"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2178"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2180"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2182"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2184"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2186"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2188"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2190"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2192"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2194"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2196"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2198"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2199"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2197"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2195"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2193"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2191"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2189"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2187"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2185"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2183"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2181"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2179"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2177"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2175"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2173"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2171"
+  },
+  {
+    "position": [
+      -67.5,
+      12.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2169"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2268"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2270"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2272"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2274"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2276"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2278"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2280"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2282"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2284"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2286"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2288"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2290"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2292"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2294"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2296"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2298"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2299"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2297"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2295"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2293"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2291"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2289"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2287"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2285"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2283"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2281"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2279"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2277"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2275"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2273"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2271"
+  },
+  {
+    "position": [
+      -67.5,
+      17.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2269"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2368"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2370"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2372"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2374"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2376"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2378"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2380"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2382"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2384"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2386"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2388"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2390"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2392"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2394"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2396"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2398"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2399"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2397"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2395"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2393"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2391"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2389"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2387"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2385"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2383"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2381"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2379"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2377"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2375"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2373"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2371"
+  },
+  {
+    "position": [
+      -67.5,
+      22.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2369"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2468"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2470"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2472"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2474"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2476"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2478"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2480"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2482"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2484"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2486"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2488"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2490"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2492"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2494"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2496"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2498"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2499"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2497"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2495"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2493"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2491"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2489"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2487"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2485"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2483"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2481"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2479"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2477"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2475"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2473"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2471"
+  },
+  {
+    "position": [
+      -67.5,
+      27.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2469"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2568"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2570"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2572"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2574"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2576"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2578"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2580"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2582"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2584"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2586"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2588"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2590"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2592"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2594"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2596"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2598"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2599"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2597"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2595"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2593"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2591"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2589"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2587"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2585"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2583"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2581"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2579"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2577"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2575"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2573"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2571"
+  },
+  {
+    "position": [
+      -67.5,
+      32.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2569"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2668"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2670"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2672"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2674"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2676"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2678"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2680"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2682"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2684"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2686"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2688"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2690"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2692"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2694"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2696"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2698"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2699"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2697"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2695"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2693"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2691"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2689"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2687"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2685"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2683"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2681"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2679"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2677"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2675"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2673"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2671"
+  },
+  {
+    "position": [
+      -67.5,
+      37.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2669"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2768"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2770"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2772"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2774"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2776"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2778"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2780"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2782"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2784"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2786"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2788"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2790"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2792"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2794"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2796"
+  },
+  {
+    "position": [
+      -62.5,
+      42.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2798"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2799"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2797"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2795"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2793"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2791"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2789"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2787"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2785"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2783"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2781"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2779"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2777"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2775"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2773"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2771"
+  },
+  {
+    "position": [
+      -67.5,
+      42.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2769"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2868"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2870"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2872"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2874"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2876"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2878"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2880"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2882"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2884"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2886"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2888"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2890"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2892"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2894"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2896"
+  },
+  {
+    "position": [
+      -62.5,
+      47.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2898"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2899"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2897"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2895"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2893"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2891"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2889"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2887"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2885"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2883"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2881"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2879"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2877"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2875"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2873"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2871"
+  },
+  {
+    "position": [
+      -67.5,
+      47.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2869"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2968"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2970"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2972"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2974"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2976"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2978"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2980"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2982"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2984"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2986"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2988"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2990"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2992"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2994"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2996"
+  },
+  {
+    "position": [
+      -62.5,
+      52.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "2998"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2999"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2997"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2995"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2993"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2991"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2989"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2987"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2985"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2983"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2981"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2979"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2977"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2975"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2973"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2971"
+  },
+  {
+    "position": [
+      -67.5,
+      52.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "2969"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5768"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      10
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5770"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      0
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5774"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      -10
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5778"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      -20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5782"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      -30
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5786"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      -40
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5790"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      -50
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5794"
+  },
+  {
+    "position": [
+      -62.5,
+      57.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5798"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5799"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5797"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5795"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5793"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5791"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5789"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5787"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5785"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5783"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5781"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5779"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5777"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5775"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5773"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5771"
+  },
+  {
+    "position": [
+      -67.5,
+      57.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5769"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5968"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      10
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5970"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      0
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5974"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      -10
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5978"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      -20
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5982"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      -30
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5986"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      -40
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5990"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      -50
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5994"
+  },
+  {
+    "position": [
+      -62.5,
+      62.5,
+      -60
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "5998"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -62.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5999"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -57.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5997"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -52.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5995"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -47.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5993"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -42.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5991"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -37.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5989"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -32.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5987"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -27.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5985"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5983"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5981"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      -2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5979"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      2.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5977"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      7.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5975"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      12.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5973"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      17.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5971"
+  },
+  {
+    "position": [
+      -67.5,
+      62.5,
+      22.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "5969"
+  },
+  {
+    "position": [
+      -72.5,
+      32.5,
+      -10
+    ],
+    "type": "Structure",
+    "dimensions": {
+      "w": 15,
+      "h": 65,
+      "d": 10
+    },
+    "roomNumber": null
+  }
+]
