@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disneyland Hotel 3D Visualizer</title>
+    
+    <!-- Tailwind CSS for styling the UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter for the UI, Lobster for the Easter Egg -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Data Parsing, PDF & Audio Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Prevent scrollbars from appearing */
+        }
+        /* Custom scrollbar for UI panels */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1f2937; /* gray-800 */
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #4b5563; /* gray-600 */
+            border-radius: 10px;
+        }
+        .filter-group {
+            max-height: 150px;
+            overflow-y: auto;
+        }
+        /* Dropdown styles */
+        .dropdown-menu { display: none; }
+        .dropdown.active .dropdown-menu { display: block; }
+        
+        /* Style for date inputs */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+        
+        /* New Sidebar UI */
+        #control-sidebar {
+            transition: transform 0.3s ease-in-out;
+        }
+        #app-container.sidebar-closed #control-sidebar {
+            transform: translateX(-100%);
+        }
+
+        /* Accordion styles for all sidebars */
+        .accordion-content, .details-accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-button svg.arrow, .details-accordion-button svg.arrow {
+             transition: transform 0.3s ease-out;
+        }
+        .accordion-button.open svg.arrow, .details-accordion-button.open svg.arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* Details Panel Bottom Sheet on Mobile */
+        #details-panel.is-active {
+            transform: translateY(0);
+        }
+
+        /* ** NEW ** Style for scrollable comment lists in details panel */
+        .comment-list-container {
+            max-height: 25rem; /* 400px */
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Main Container -->
+    <div id="app-container" class="w-screen h-screen flex flex-col">
+
+        <!-- Top Menu Bar -->
+        <header class="bg-gray-800/50 backdrop-blur-sm border-b border-gray-700 p-2 z-30 flex items-center justify-between flex-wrap gap-2">
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <!-- Main Menu Button (Hamburger) -->
+                <button id="main-menu-btn" class="p-2 rounded-md hover:bg-gray-700 transition-colors ml-2" title="Toggle Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <h1 class="text-lg md:text-xl font-bold text-white">Disneyland Hotel 3D Visualizer</h1>
+                 <!-- Camera Controls in Header -->
+                <div id="header-camera-controls" class="hidden md:flex items-center space-x-2"></div>
+            </div>
+            <div class="flex items-center space-x-2 md:space-x-4 flex-wrap w-full sm:w-auto justify-end px-2 sm:px-0">
+                <!-- Keyword Search with Scope -->
+                <div class="flex items-center flex-grow sm:flex-grow-0">
+                    <select id="search-scope" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-l-lg focus:ring-blue-500 focus:border-blue-500 p-2 h-full">
+                        <option value="all">All Comments</option>
+                        <option value="surveys">Survey Comments</option>
+                        <option value="inspections">Inspection Remarks</option>
+                    </select>
+                    <input type="text" id="keyword-search" placeholder="Search..." class="bg-gray-700 border-t border-b border-gray-600 text-white text-sm focus:ring-blue-500 focus:border-blue-500 p-2 w-full sm:w-40 transition-all duration-300">
+                    <!-- MODIFIED: Added Search Button -->
+                    <button id="search-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 text-sm transition-colors h-full border-t border-b border-gray-600">Search</button>
+                    <button id="reset-btn" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-r-lg text-sm transition-colors h-full">Reset</button>
+                </div>
+                <!-- Display Options Dropdown -->
+                <div id="display-dropdown" class="relative dropdown">
+                     <button id="display-dropdown-btn" class="p-2 rounded-md hover:bg-gray-700 transition-colors" title="Display Options">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </button>
+                    <div class="dropdown-menu absolute right-0 mt-2 w-64 bg-gray-700 rounded-md shadow-xl z-20">
+                        <div id="legend-container" class="p-3"></div>
+                        <div id="averages-container" class="p-3 border-t border-gray-600"></div>
+                    </div>
+                </div>
+                <!-- Data Upload Dropdown -->
+                <div id="upload-dropdown" class="relative dropdown">
+                    <button id="upload-dropdown-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg flex items-center space-x-2 transition-colors">
+                        <span>Upload</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="dropdown-menu absolute right-0 mt-2 w-48 bg-gray-700 rounded-md shadow-xl z-20">
+                        <label for="file-upload" class="block px-4 py-2 text-sm text-white hover:bg-blue-500 cursor-pointer rounded-t-md">Upload Medallia Data</label>
+                        <input type="file" id="file-upload" class="hidden"/>
+                        <label for="inspection-file-upload" class="block px-4 py-2 text-sm text-white hover:bg-green-500 cursor-pointer">Upload Inspections</label>
+                        <input type="file" id="inspection-file-upload" class="hidden"/>
+                        <label for="live-data-upload" class="block px-4 py-2 text-sm text-white hover:bg-purple-500 cursor-pointer rounded-b-md">Upload Live Data</label>
+                        <input type="file" id="live-data-upload" class="hidden"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex-grow relative">
+            <!-- Unified Control Sidebar -->
+            <div id="control-sidebar" class="absolute top-0 left-0 h-full w-96 bg-gray-800/80 backdrop-blur-md z-20 flex flex-col">
+                <div class="flex-shrink-0 p-4 border-b border-gray-700">
+                    <h2 class="text-xl font-bold">Controls & Analysis</h2>
+                </div>
+                <div class="flex-grow overflow-y-auto custom-scrollbar p-4 space-y-2">
+                    <!-- Accordion Item: Filters -->
+                    <div class="bg-gray-900/50 rounded-lg">
+                        <button class="accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                            <span class="flex items-center space-x-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" /></svg><span>Filters</span></span>
+                            <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-4 border-t border-gray-700 space-y-4">
+                                <div><h3 class="font-bold text-md mb-2">Date Range</h3><div class="space-y-2 text-sm"><div><label for="start-date" class="block mb-1 text-gray-400">Start Date</label><input type="date" id="start-date" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5"></div><div><label for="end-date" class="block mb-1 text-gray-400">End Date</label><input type="date" id="end-date" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5"></div><button id="date-apply-btn" class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-lg text-sm transition-colors">Apply Dates</button></div></div>
+                                <div><h3 class="font-bold text-md mb-2">Tower</h3><div class="tower-filter-container filter-group custom-scrollbar space-y-1 text-sm pr-2"></div></div>
+                                <div><h3 class="font-bold text-md mb-2">Floor</h3><div class="floor-filter-container filter-group custom-scrollbar space-y-1 text-sm pr-2"></div></div>
+                                <div><h3 class="font-bold text-md mb-2">Bed Type</h3><div class="bed-type-filter-container filter-group custom-scrollbar space-y-1 text-sm pr-2"></div></div>
+                                <div><h3 class="font-bold text-md mb-2">Attendant</h3><div class="attendant-filter-container filter-group custom-scrollbar space-y-1 text-sm pr-2"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item: Views -->
+                    <div class="bg-gray-900/50 rounded-lg">
+                        <button class="accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                            <span class="flex items-center space-x-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg><span>Views</span></span>
+                            <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-4 border-t border-gray-700 space-y-4">
+                                 <div class="flex items-center space-x-2"><label for="view-select" class="text-sm font-medium">Color Scheme:</label><select id="view-select" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-1.5 w-full"><option value="default">By Bed Type</option></select></div>
+                                 <div class="flex items-center space-x-2 pt-2 border-t border-gray-700"><input id="wireframe-toggle" type="checkbox" checked class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-600 ring-offset-gray-800 focus:ring-2"><label for="wireframe-toggle" class="text-sm font-medium text-gray-300">Show Hidden Wireframes</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item: Data Analysis -->
+                    <div class="bg-gray-900/50 rounded-lg">
+                         <button class="accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                            <span class="flex items-center space-x-3"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg><span>Data Analysis</span></span>
+                            <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-4 border-t border-gray-700 space-y-4">
+                                <button id="performance-snapshot-btn" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-3 rounded-lg text-sm transition-colors">Performance Snapshot</button>
+                                <div><h3 class="font-bold text-md mb-2">Inspectees</h3><div class="inspectee-filter-container filter-group custom-scrollbar space-y-1 text-sm pr-2"></div></div>
+                                <div><h3 class="font-bold text-md mb-2">Inspectors</h3><div class="inspector-filter-container filter-group custom-scrollbar space-y-1 text-sm pr-2"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Canvas sits behind the sidebar -->
+            <div id="canvas-container" class="w-full h-full absolute top-0 left-0"></div>
+
+            <!-- Tooltip -->
+            <div id="tooltip" class="absolute hidden bg-gray-800 text-white text-sm rounded-md p-2 z-30 pointer-events-none shadow-lg border border-gray-600"></div>
+            
+            <!-- Details Panel -->
+            <div id="details-panel" class="fixed bottom-0 left-0 w-full max-h-[75vh] lg:max-h-full bg-gray-800/95 backdrop-blur-md rounded-t-lg z-40 flex flex-col transition-transform duration-300 ease-in-out transform translate-y-full lg:absolute lg:w-96 lg:h-auto lg:top-[4.5rem] lg:left-auto lg:right-4 lg:bottom-auto lg:rounded-lg lg:z-20 lg:translate-y-0 hidden max-h-[calc(100vh-6rem)]">
+                <div id="details-panel-header" class="flex justify-between items-center p-3 border-b border-gray-700">
+                    <h3 id="details-panel-title" class="font-bold text-lg">Details</h3>
+                    <div id="details-panel-actions" class="space-x-2"></div>
+                    <button class="panel-close-btn text-gray-400 hover:text-white text-2xl leading-none">&times;</button>
+                </div>
+                <div id="details-panel-content" class="p-4 overflow-y-auto custom-scrollbar flex-grow min-h-0">
+                    <p class="text-gray-400 text-center py-8">Click a room to see its details here.</p>
+                </div>
+            </div>
+            
+            <!-- Top/Bottom Performers Modal -->
+            <div id="performers-modal" class="fixed inset-0 bg-gray-900/80 z-50 hidden items-center justify-center p-4 sm:p-8">
+                <div class="bg-gray-800 rounded-lg shadow-xl w-full max-w-lg flex flex-col border border-gray-700">
+                    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h3 class="font-bold text-lg">Performance Snapshot</h3>
+                        <button id="performers-close-btn" class="text-gray-400 hover:text-white text-2xl leading-none">&times;</button>
+                    </div>
+                    <div id="performers-content" class="p-4 overflow-auto custom-scrollbar max-h-[70vh]"></div>
+                </div>
+            </div>
+            
+            <!-- Loading/Status Message -->
+            <div id="status-message" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800/80 p-4 rounded-lg z-50 hidden items-center justify-center flex-col">
+                <p>Loading 3D Model...</p>
+            </div>
+
+        </main>
+    </div>
+    
+    <!-- three.js and controls -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        
+        // --- CORE APP SETUP ---
+        const canvasContainer = document.getElementById('canvas-container');
+        const statusMessage = document.getElementById('status-message');
+        const tooltip = document.getElementById('tooltip');
+        const appContainer = document.getElementById('app-container');
+        
+        // --- UI ELEMENT REFERENCES ---
+        const performersModal = document.getElementById('performers-modal');
+        const performersContent = document.getElementById('performers-content');
+        const performersCloseBtn = document.getElementById('performers-close-btn');
+        
+        const attendantFilterContainers = document.querySelectorAll('.attendant-filter-container');
+        const inspecteeFilterContainers = document.querySelectorAll('.inspectee-filter-container');
+        const inspectorFilterContainers = document.querySelectorAll('.inspector-filter-container');
+        const towerFilterContainers = document.querySelectorAll('.tower-filter-container');
+        const floorFilterContainers = document.querySelectorAll('.floor-filter-container');
+        const bedTypeFilterContainers = document.querySelectorAll('.bed-type-filter-container');
+        const towerAveragesContainer = document.getElementById('averages-container');
+        const legendContainer = document.getElementById('legend-container');
+        
+        const uploadDropdown = document.getElementById('upload-dropdown');
+
+        // --- NEW UI REFERENCES ---
+        const controlSidebar = document.getElementById('control-sidebar');
+        const mainMenuBtn = document.getElementById('main-menu-btn');
+        const headerCameraControls = document.getElementById('header-camera-controls');
+        const displayDropdownBtn = document.getElementById('display-dropdown-btn');
+
+        // --- OTHER PANEL REFERENCES ---
+        const detailsPanel = document.getElementById('details-panel');
+        const detailsPanelHeader = document.getElementById('details-panel-header');
+        const detailsPanelTitle = document.getElementById('details-panel-title');
+        const detailsPanelActions = document.getElementById('details-panel-actions');
+        const detailsPanelContent = document.getElementById('details-panel-content');
+        
+        let scene, camera, renderer, controls, raycaster, clock;
+        let roomMeshes = {};
+        let roomMeshArray = [];
+        let isParadePlaying = false;
+        let labelMaterialCache = {};
+        let showHiddenWireframes = true;
+        
+        // --- DATA STORES & CONTROLS ---
+        let roomData = {}; 
+        let filteredRoomData = {};
+        let inspecteeData = {};
+        let inspectorData = {};
+        let currentView = 'default';
+        let hoveredRoom = null;
+        let selectedRooms = new Set();
+        let selectionOutlines = {};
+        let maxKeywordMentions = 0;
+        
+        let allTowers = new Set(), allFloors = new Set(), allBedTypes = new Set(), allInspectees = new Set(), allInspectors = new Set(), allAttendants = new Set();
+        let selectedTowers = new Set(), selectedFloors = new Set(), selectedBedTypes = new Set(), selectedInspectees = new Set(), selectedInspectors = new Set(), selectedAttendants = new Set();
+        const keyStates = {};
+        let surveyDataLoaded = false;
+        let inspectionDataLoaded = false;
+        let liveDataLoaded = false;
+
+        const COLORS = {
+            ROOM_DEFAULT: new THREE.Color(0x888888),
+            STRUCTURE: new THREE.Color(0x111827),
+            ROOM_HOVER_EMISSIVE: new THREE.Color(0x555555),
+            ROOM_SELECTED_OUTLINE: 0xffff00,
+            EDGE: 0x4b5563,
+            HEATMAP: ['#ef4444', '#f97316', '#f59e0b', '#eab308', '#84cc16', '#22c55e', '#10b981'],
+            RAINBOW: ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#9400d3'],
+            LIVE_INSPECTED: new THREE.Color('#22c55e'),
+            LIVE_DIRTY: new THREE.Color('#ef4444'),
+            LIVE_CLEAN: new THREE.Color('#3b82f6'),
+            LIVE_DND: new THREE.Color('#b91c1c'),
+            PULSE_GREY: new THREE.Color('#6b7280'),
+            PULSE_YELLOW: new THREE.Color('#eab308'),
+            PULSE_RED: new THREE.Color('#991b1b'), // Darker Red
+            PULSE_ORANGE: new THREE.Color('#f97316'),
+            PULSE_PURPLE: new THREE.Color('#8b5cf6'),
+        };
+
+        const cameraViews = {
+            'Overview': { pos: { x: 178, y: 195, z: 215 }, target: { x: 0, y: 0, z: 0 } },
+            'Fantasy Tower': {
+                'City': { pos: { x: -1, y: 100, z: 230 }, target: { x: 0, y: 40, z: 0 } },
+                'Pool': { pos: { x: 0, y: 100, z: -230 }, target: { x: 0, y: 40, z: 0 } }
+            },
+            'Adventure Tower': {
+                'City': { pos: { x: -280, y: 100, z: 10 }, target: { x: -85, y: 40, z: 0 } },
+                'Pool': { pos: { x: 110, y: 100, z: -150 }, target: { x: -85, y: 40, z: 0 } }
+            },
+            'Frontier Tower': {
+                'City': { pos: { x: 280, y: 100, z: 10 }, target: { x: 85, y: 40, z: 0 } },
+                'Pool': { pos: { x: -110, y: 100, z: -150 }, target: { x: 85, y: 40, z: 0 } }
+            }
+        };
+
+        const remappedCameraViews = {
+            'Overview': cameraViews['Overview'],
+            'Fantasy Tower': {
+                'City': cameraViews['Adventure Tower']['City'],
+                'Pool': cameraViews['Adventure Tower']['Pool']
+            },
+            'Adventure Tower': {
+                'City': cameraViews['Frontier Tower']['City'],
+                'Pool': cameraViews['Frontier Tower']['Pool']
+            },
+            'Frontier Tower': {
+                'City': cameraViews['Fantasy Tower']['City'],
+                'Pool': cameraViews['Fantasy Tower']['Pool']
+            }
+        };
+
+        // --- INITIALIZATION ---
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x111827);
+            clock = new THREE.Clock();
+
+            camera = new THREE.PerspectiveCamera(50, canvasContainer.clientWidth / canvasContainer.clientHeight, 0.1, 2000);
+            camera.position.set(150, 150, 150);
+
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            canvasContainer.appendChild(renderer.domElement);
+            
+            controls = new OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.screenSpacePanning = false;
+            controls.minDistance = 20;
+            controls.maxDistance = 500;
+            controls.maxPolarAngle = Math.PI / 2;
+            controls.zoomSpeed = 0.5;
+
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
+            scene.add(ambientLight);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
+            directionalLight.position.set(100, 100, 50);
+            scene.add(directionalLight);
+
+            raycaster = new THREE.Raycaster();
+
+            loadHotelModel();
+            animate();
+
+            // --- EVENT LISTENERS ---
+            setupEventListeners();
+        }
+        
+        function setupEventListeners() {
+            window.addEventListener('resize', onWindowResize);
+            canvasContainer.addEventListener('mousemove', onMouseMove);
+            canvasContainer.addEventListener('click', onRoomClick);
+            document.getElementById('file-upload').addEventListener('change', (e) => handleFileUpload(e, 'survey'));
+            document.getElementById('inspection-file-upload').addEventListener('change', (e) => handleFileUpload(e, 'inspection'));
+            document.getElementById('live-data-upload').addEventListener('change', (e) => handleFileUpload(e, 'live'));
+            
+            // MODIFIED: Re-wired view select to be more efficient
+            document.getElementById('view-select').addEventListener('change', (e) => {
+                switchView(e.target.value);
+                applyAllFilters();
+            });
+            
+            window.addEventListener('keydown', (event) => { keyStates[event.key.toLowerCase()] = true; });
+            window.addEventListener('keyup', (event) => { 
+                keyStates[event.key.toLowerCase()] = false; 
+                if (event.key === 'Escape') {
+                    clearRoomSelection();
+                    closeDetailsPanel();
+                }
+            });
+
+            performersCloseBtn.addEventListener('click', () => { performersModal.style.display = 'none'; });
+            document.getElementById('performance-snapshot-btn').addEventListener('click', displayTopBottomPerformers);
+            
+            // MODIFIED: Replaced 'input' listener with a button and 'Enter' key listener
+            const searchInput = document.getElementById('keyword-search');
+            const searchBtn = document.getElementById('search-btn');
+
+            function triggerSearch() {
+                const keyword = searchInput.value.trim();
+                const searchScope = document.getElementById('search-scope').value;
+                // Keyword search is active if there is a keyword and the scope is relevant to comments
+                const isKeywordCommentSearch = keyword && (searchScope === 'all' || searchScope === 'surveys');
+
+                updateAvailableViews(isKeywordCommentSearch);
+
+                // If a keyword search is now active, automatically switch the view.
+                if (isKeywordCommentSearch && currentView !== 'keyword_mention_frequency') {
+                    document.getElementById('view-select').value = 'keyword_mention_frequency';
+                    switchView('keyword_mention_frequency');
+                } 
+                // If the keyword was cleared and we were on the keyword view, switch back to default.
+                else if (!keyword && currentView === 'keyword_mention_frequency') {
+                    document.getElementById('view-select').value = 'default';
+                    switchView('default');
+                }
+                
+                // Always apply filters after a search action
+                applyAllFilters();
+            }
+
+            searchBtn.addEventListener('click', triggerSearch);
+            searchInput.addEventListener('keyup', (e) => {
+                if (e.key === 'Enter') {
+                    triggerSearch();
+                }
+            });
+
+            document.getElementById('search-scope').addEventListener('change', applyAllFilters);
+            document.getElementById('reset-btn').addEventListener('click', resetAllFilters);
+            
+            document.getElementById('date-apply-btn').addEventListener('click', applyDateFilter);
+            
+            // Event delegation for dynamically created buttons
+            document.body.addEventListener('click', function(e) {
+                if (e.target.id === 'export-panel-csv-btn') exportDataToCSV(true);
+                if (e.target.id === 'export-panel-pdf-btn') exportAnalyticsToPDF(detailsPanelContent);
+                if (e.target.id === 'export-panel-html-btn') exportSelfContainedHTML();
+                if (e.target.classList.contains('view-inspectee-report-btn')) {
+                    const inspecteeName = e.target.dataset.inspectee;
+                    displayInspecteeAnalysisPanel(inspecteeName);
+                }
+            });
+
+
+            // --- NEW UI LISTENERS ---
+            mainMenuBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                appContainer.classList.toggle('sidebar-closed');
+            });
+            
+            // Panel Close Buttons
+            detailsPanel.querySelector('.panel-close-btn').addEventListener('click', closeDetailsPanel);
+            
+            // --- DROPDOWN CLICK LOGIC ---
+            uploadDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+                uploadDropdown.classList.toggle('active');
+            });
+             headerCameraControls.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+            displayDropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                displayDropdownBtn.parentElement.classList.toggle('active');
+            });
+            
+            // --- ACCORDION LISTENERS ---
+            document.querySelectorAll('.accordion-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const wasOpen = button.classList.contains('open');
+                    
+                    // Close all accordions in the same parent container
+                    button.closest('.overflow-y-auto').querySelectorAll('.accordion-button').forEach(btn => {
+                        btn.classList.remove('open');
+                        btn.nextElementSibling.style.maxHeight = null;
+                    });
+
+                    // Open the clicked one if it wasn't already open
+                    if (!wasOpen) {
+                        button.classList.add('open');
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // --- DELEGATED ACCORDION LISTENER FOR DETAILS PANEL ---
+            detailsPanel.addEventListener('click', (e) => {
+                const button = e.target.closest('.details-accordion-button');
+                if (!button) return;
+
+                const content = button.nextElementSibling;
+                const wasOpen = button.classList.contains('open');
+
+                // This logic allows multiple accordions to be open at once in the details panel
+                button.classList.toggle('open');
+                content.style.maxHeight = wasOpen ? null : content.scrollHeight + "px";
+            });
+
+            // --- GLOBAL CLICK LISTENER ---
+            window.addEventListener('click', (e) => {
+                if (uploadDropdown.classList.contains('active')) {
+                    uploadDropdown.classList.remove('active');
+                }
+                if (displayDropdownBtn.parentElement.classList.contains('active')) {
+                    displayDropdownBtn.parentElement.classList.remove('active');
+                }
+                // Close camera dropdowns
+                document.querySelectorAll('.camera-dropdown.active').forEach(dropdown => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('active');
+                    }
+                });
+            });
+        }
+        
+        function createLabelTexture(text, text2, options = {}) {
+            const { font = 'Inter', fontSize = 65, color = 'white', strokeColor = 'black', strokeWidth = 4, underline = false } = options;
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.width = 512;
+            canvas.height = 128;
+            context.font = `700 ${fontSize}px ${font}`;
+            context.textAlign = 'center';
+            context.textBaseline = 'middle';
+            context.strokeStyle = strokeColor;
+            context.lineWidth = strokeWidth;
+            context.fillStyle = color;
+            
+            const yPos = canvas.height / 2 - (text2 ? 20 : 0);
+            context.strokeText(text, canvas.width / 2, yPos);
+            context.fillText(text, canvas.width / 2, yPos);
+
+            if (underline) {
+                const textWidth = context.measureText(text).width;
+                context.beginPath();
+                context.moveTo(canvas.width / 2 - textWidth / 2, yPos + fontSize / 2);
+                context.lineTo(canvas.width / 2 + textWidth / 2, yPos + fontSize / 2);
+                context.strokeStyle = color;
+                context.lineWidth = 4;
+                context.stroke();
+            }
+            
+            if (text2) {
+                context.font = `400 ${fontSize - 15}px ${font}`;
+                context.strokeText(text2, canvas.width / 2, canvas.height / 2 + 30);
+                context.fillText(text2, canvas.width / 2, canvas.height / 2 + 30);
+            }
+
+            return new THREE.CanvasTexture(canvas);
+        }
+
+        function createLabel(text, text2, options, planeWidth = 4.5, planeHeight = 2.25) {
+            const cacheKey = `${text}_${text2}_${options.color || 'white'}_${options.font || 'Inter'}_${!!options.underline}`;
+            
+            let material;
+            if (labelMaterialCache[cacheKey]) {
+                material = labelMaterialCache[cacheKey];
+            } else {
+                const texture = createLabelTexture(text, text2, options);
+                texture.needsUpdate = true;
+                material = new THREE.MeshBasicMaterial({ map: texture, transparent: true, depthTest: true, depthWrite: false });
+                labelMaterialCache[cacheKey] = material;
+            }
+            
+            const geometry = new THREE.PlaneGeometry(planeWidth, planeHeight);
+            const labelMesh = new THREE.Mesh(geometry, material);
+            labelMesh.userData.isLabel = true;
+            labelMesh.renderOrder = 1;
+            return labelMesh;
+        }
+
+        function getTowerFromRoomNumber(roomNum) {
+            if (!roomNum) return 'Unknown';
+            const lastTwoDigits = parseInt(String(roomNum).slice(-2), 10);
+            if (lastTwoDigits <= 35) return 'Fantasy Tower';
+            if (lastTwoDigits <= 67) return 'Adventure Tower';
+            return 'Frontier Tower';
+        }
+
+        async function loadHotelModel() {
+            statusMessage.style.display = 'flex';
+            try {
+                const embeddedDataElement = document.getElementById('embedded-data');
+                if (embeddedDataElement) {
+                    roomData = JSON.parse(embeddedDataElement.textContent);
+                    statusMessage.innerHTML = '<p>Loading embedded data...</p>';
+                } else {
+                    const roomDataResponse = await fetch('https://raw.githubusercontent.com/NokemG/DLH/main/RoomTypeList2.json');
+                    if (!roomDataResponse.ok) throw new Error(`HTTP error! status: ${roomDataResponse.status}`);
+                    const defaultData = await roomDataResponse.json();
+                    processRoomData(defaultData);
+                }
+
+                const layoutResponse = await fetch('https://raw.githubusercontent.com/NokemG/DLH/main/hotel_layout1.json');
+                const layout = await layoutResponse.json();
+
+                const center = new THREE.Vector3();
+                const box = new THREE.Box3();
+
+                layout.forEach(item => {
+                    const dims = item.dimensions;
+                    const pos = item.position;
+                    const geometry = new THREE.BoxGeometry(dims.w, dims.h, dims.d);
+                    const isRoom = item.type === 'Room';
+                    const baseColor = isRoom ? COLORS.ROOM_DEFAULT : COLORS.STRUCTURE;
+                    const material = new THREE.MeshLambertMaterial({ color: baseColor, transparent: true });
+                    const mesh = new THREE.Mesh(geometry, material);
+                    mesh.position.set(pos[0], pos[1], pos[2]);
+                    const edges = new THREE.EdgesGeometry(geometry);
+                    const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: COLORS.EDGE, linewidth: 2 }));
+                    mesh.add(line);
+
+                    const homeTower = getTowerFromRoomNumber(item.roomNumber);
+                    const lastTwoDigits = item.roomNumber ? parseInt(String(item.roomNumber).slice(-2), 10) : -1;
+                    const viewType = lastTwoDigits % 2 === 0 ? 'Pool' : 'City';
+
+                    mesh.userData = {
+                        type: item.type,
+                        roomNumber: item.roomNumber,
+                        tower: homeTower,
+                        viewType: viewType,
+                        floor: item.roomNumber ? String(item.roomNumber).substring(0, 2) : null,
+                        originalColor: baseColor.clone(),
+                        isPulsing: false,
+                        pulseColor1: null,
+                        pulseColor2: null,
+                        wireframe: line,
+                    };
+                    
+                    if (isRoom && item.roomNumber) {
+                        roomMeshes[item.roomNumber] = mesh;
+                        roomMeshArray.push(mesh);
+                        allTowers.add(homeTower);
+                        if (mesh.userData.floor) allFloors.add(mesh.userData.floor);
+                    }
+                    
+                    scene.add(mesh);
+                    box.expandByObject(mesh);
+                });
+
+                const groundGeometry = new THREE.PlaneGeometry(1000, 1000);
+                const groundMaterial = new THREE.MeshStandardMaterial({ color: 0x222b3b, roughness: 0.8 });
+                const ground = new THREE.Mesh(groundGeometry, groundMaterial);
+                ground.rotation.x = -Math.PI / 2;
+                ground.position.y = -0.1;
+                scene.add(ground);
+
+                box.getCenter(center);
+                controls.target.copy(center);
+                controls.update();
+                
+                populateHeaderCameraControls();
+                populateFilters();
+                allTowers.forEach(tower => selectedTowers.add(tower));
+                document.querySelectorAll('.tower-filter-container input[type="checkbox"]').forEach(cb => cb.checked = true);
+                
+                // If data was embedded, process it for views
+                if (embeddedDataElement) {
+                    processAllUploadedData();
+                }
+
+                switchView('default');
+
+            } catch (error) {
+                console.error("Failed to load hotel model or data:", error);
+                statusMessage.textContent = 'Error loading model. See console for details.';
+                return;
+            }
+            statusMessage.style.display = 'none';
+        }
+        
+        function onWindowResize() {
+            camera.aspect = canvasContainer.clientWidth / canvasContainer.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+        }
+
+        function animate(time) {
+            requestAnimationFrame(animate);
+            const delta = clock.getDelta();
+            
+            TWEEN.update(time);
+
+            const moveSpeed = 1.0;
+            if (keyStates['w']) { controls.object.translateZ(-moveSpeed * delta * 60); }
+            if (keyStates['s']) { controls.object.translateZ(moveSpeed * delta * 60); }
+            if (keyStates['a']) { controls.object.translateX(-moveSpeed * delta * 60); }
+            if (keyStates['d']) { controls.object.translateX(moveSpeed * delta * 60); }
+            
+            const sinTime = clock.getElapsedTime();
+            for (const roomNum in roomMeshes) {
+                const mesh = roomMeshes[roomNum];
+                if (mesh.userData.isPulsing) {
+                    const pulseFactor = (Math.sin(sinTime * 5) + 1) / 2;
+                    mesh.material.color.lerpColors(mesh.userData.pulseColor1, mesh.userData.pulseColor2, pulseFactor);
+                }
+            }
+
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        
+        // --- DATA HANDLING ---
+        function handleFileUpload(event, type) {
+            if (typeof window.XLSX === 'undefined') {
+                statusMessage.innerHTML = '<p>Parsing library not ready. Please try again in a moment.</p>';
+                statusMessage.style.display = 'flex';
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+                return;
+            }
+
+            const file = event.target.files[0];
+            if (!file) return;
+
+            statusMessage.innerHTML = `<p>Processing ${type} file...</p>`;
+            statusMessage.style.display = 'flex';
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = new Uint8Array(e.target.result);
+                    const workbook = window.XLSX.read(data, {type: 'array'});
+                    const firstSheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[firstSheetName];
+                    const json = window.XLSX.utils.sheet_to_json(worksheet, {header: 1, defval: ""});
+                    
+                    if (type === 'survey') {
+                        processSurveyData(json);
+                    } else if (type === 'inspection') {
+                        processInspectionData(json);
+                    } else if (type === 'live') {
+                        processLiveData(json);
+                    }
+                } catch (err) {
+                    console.error(`Error processing ${type} file:`, err);
+                    statusMessage.innerHTML = `<p>Error processing file. See console.</p>`;
+                    setTimeout(() => { statusMessage.style.display = 'none'; }, 5000);
+                } finally {
+                    event.target.value = '';
+                }
+            };
+            reader.onerror = function() {
+                console.error("Error reading file.");
+                statusMessage.innerHTML = `<p>Could not read the file.</p>`;
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+            }
+            reader.readAsArrayBuffer(file);
+        }
+        
+        function cleanRoomNumber(rawRoomNum) {
+            if (!rawRoomNum) return null;
+            const match = String(rawRoomNum).match(/\d{4}/);
+            return match ? match[0] : null;
+        }
+        
+        function processRoomData(data) {
+            data.forEach(row => {
+                const cleanedRoomNum = cleanRoomNumber(row["RoomNumber"]);
+                if (!cleanedRoomNum) return;
+
+                if (!roomData[cleanedRoomNum]) {
+                    roomData[cleanedRoomNum] = { surveys: [], inspections: [], live: null, default: {} };
+                }
+                
+                const bedType = row['Bed Type'];
+                if(bedType) allBedTypes.add(bedType);
+
+                roomData[cleanedRoomNum].default = {
+                    roomType: row['Room Type'], bedType: bedType, viewType: row['View Type'],
+                    occupancy: row['Accommodates'], ada: row['ADA/Accessible'], connector: row['Connector room'],
+                    rollawayAllowed: row['Rollaway Allowed'], specifications: row['Specifications']
+                };
+            });
+            filteredRoomData = JSON.parse(JSON.stringify(roomData));
+        }
+
+        function convertExcelDate(excelDate) {
+            if (!excelDate) return null;
+
+            // Handle Excel's serial number format
+            if (typeof excelDate === 'number' && excelDate > 1) {
+                const date = new Date(Math.round((excelDate - 25569) * 86400 * 1000));
+                return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+            }
+
+            // Handle string dates
+            const dateStr = String(excelDate);
+            // Try parsing directly, this handles ISO strings and some other common formats
+            let d = new Date(dateStr);
+            if (!isNaN(d.getTime())) {
+                return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+            }
+
+            // Fallback for "MM/DD/YYYY" or "M/D/YYYY" formats
+            const parts = dateStr.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+            if (parts && parts.length === 4) {
+                const year = parseInt(parts[3], 10);
+                const month = parseInt(parts[1], 10) - 1; // JS months are 0-indexed
+                const day = parseInt(parts[2], 10);
+                if (year > 1900 && month >= 0 && day > 0) {
+                    return new Date(Date.UTC(year, month, day));
+                }
+            }
+            
+            return null; // Return null if all parsing fails
+        }
+
+        function processSurveyData(data) {
+            // Assuming header is on row 3 (index 2) and data starts on row 4 (index 3)
+            const headerRow = data[2] || [];
+            const dataRows = data.slice(3);
+
+            // Per user request, use fixed column indices for key data: B=1, H=7, I=8
+            const COLS = {
+                DATE: 1, // Column B: Check-in Date
+                CLEAN: 7, // Column H: Cleanliness upon first entering room
+                ROOM: 8, // Column I: Room Number
+                // Find other columns dynamically for flexibility
+                OVERALL: headerRow.indexOf('Overall Score'),
+                STAFF: headerRow.indexOf('Staff Experience'),
+                COMMENT: headerRow.indexOf('All survey comments concatenated')
+            };
+
+            // Basic validation
+            if (data.length < 4) {
+                statusMessage.innerHTML = `<p>Survey file appears to be empty or in an incorrect format.</p>`;
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+                return;
+            }
+
+            let processedCount = 0;
+            dataRows.forEach(row => {
+                if (!row || row.length === 0) return; // Skip empty rows
+
+                const roomNum = cleanRoomNumber(row[COLS.ROOM]);
+                if (!roomNum || !roomData[roomNum]) return;
+
+                if (!roomData[roomNum].surveys) roomData[roomNum].surveys = [];
+
+                // Handle cases where dynamic columns aren't found
+                const overallScore = COLS.OVERALL > -1 ? parseFloat(row[COLS.OVERALL]) : NaN;
+                const staffScore = COLS.STAFF > -1 ? parseFloat(row[COLS.STAFF]) : NaN;
+                const comment = COLS.COMMENT > -1 ? row[COLS.COMMENT] : '';
+
+                roomData[roomNum].surveys.push({
+                    date: convertExcelDate(row[COLS.DATE]),
+                    overall: overallScore,
+                    staff: staffScore,
+                    cleanliness: parseFloat(row[COLS.CLEAN]),
+                    comment: comment || ''
+                });
+                processedCount++;
+            });
+
+            if (processedCount > 0) {
+                surveyDataLoaded = true;
+                applyDateFilter();
+                updateAvailableViews();
+                switchView('survey_avg_cleanliness'); // Switch to the relevant view to show fix
+                applyAllFilters();
+                statusMessage.innerHTML = `<p>Success! Processed ${processedCount} survey records.</p>`;
+            } else {
+                statusMessage.innerHTML = `<p>No matching rooms found in survey data. Check room numbers.</p>`;
+            }
+            setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+        }
+
+        function processInspectionData(data) {
+            let headerRowIndex = -1;
+            let headerRow;
+            // Find header row robustly
+            for (let i = 0; i < data.length; i++) {
+                const row = data[i];
+                if (row && row.includes('Inspectee') && row.includes('Inspector') && row.includes('Room')) {
+                    headerRowIndex = i;
+                    headerRow = row;
+                    break;
+                }
+            }
+
+            if (headerRowIndex === -1) {
+                statusMessage.innerHTML = `<p>Could not find a valid header row in the inspection file.</p>`;
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+                return;
+            }
+            
+            // Normalize header for robust matching
+            const normalizedHeader = headerRow.map(h => typeof h === 'string' ? h.trim().toLowerCase() : '');
+            const findCol = (possibleNames) => {
+                for (const name of possibleNames) {
+                    const index = normalizedHeader.indexOf(name.toLowerCase());
+                    if (index > -1) return index;
+                }
+                return -1;
+            };
+
+            const COLS = {
+                SO: 0, // Assuming this is always column A
+                INSPECTEE: findCol(['Inspectee']),
+                ROOM: findCol(['Room', 'Room Number']),
+                INSPECTOR: findCol(['Inspector']),
+                STEP_NAME: findCol(['Step Name']),
+                STEP_REMARK: findCol(['Step Remark']),
+                SCORE: findCol(['Score']),
+                DATE: findCol(['Date'])
+            };
+
+            if ([COLS.INSPECTEE, COLS.ROOM, COLS.INSPECTOR, COLS.STEP_NAME, COLS.DATE].includes(-1)) {
+                statusMessage.innerHTML = `<p>One or more required columns (Inspectee, Room, etc.) were not found in the inspection file.</p>`;
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 5000);
+                return;
+            }
+
+            const rows = data.slice(headerRowIndex + 1);
+            const serviceOrders = {};
+            let currentSOData = null;
+
+            rows.forEach(row => {
+                if (!row || row.length < Math.max(COLS.INSPECTEE, COLS.ROOM, COLS.INSPECTOR)) return;
+
+                const soValue = row[COLS.SO];
+                if (soValue && soValue.trim() !== "") {
+                    const roomNum = cleanRoomNumber(row[COLS.ROOM]);
+                    if (roomNum) {
+                        currentSOData = {
+                            inspectee: row[COLS.INSPECTEE],
+                            inspector: row[COLS.INSPECTOR],
+                            room: roomNum,
+                            date: convertExcelDate(row[COLS.DATE]),
+                            questions: []
+                        };
+                        serviceOrders[soValue] = currentSOData;
+                    } else {
+                        currentSOData = null; // Invalidate if room number is missing on main SO line
+                    }
+                }
+                
+                if (currentSOData && row[COLS.STEP_NAME] && row[COLS.STEP_NAME].trim() !== "") {
+                    const scoreValue = row[COLS.SCORE];
+                    const score = !isNaN(parseInt(scoreValue, 10)) && parseInt(scoreValue, 10) === 1 ? 1 : 0;
+                    currentSOData.questions.push({
+                        name: row[COLS.STEP_NAME],
+                        remark: row[COLS.STEP_REMARK],
+                        score: score
+                    });
+                }
+            });
+
+            let processedCount = 0;
+            for (const so in serviceOrders) {
+                const inspection = serviceOrders[so];
+                if (!inspection.room || !roomData[inspection.room] || !inspection.inspectee) continue;
+
+                const totalScore = inspection.questions.reduce((sum, q) => sum + q.score, 0);
+                const overallScore = inspection.questions.length > 0 ? totalScore / inspection.questions.length : 0;
+
+                if (!roomData[inspection.room].inspections) roomData[inspection.room].inspections = [];
+                roomData[inspection.room].inspections.push({
+                    serviceOrder: so,
+                    inspectee: inspection.inspectee,
+                    inspector: inspection.inspector,
+                    date: inspection.date,
+                    overallScore: overallScore,
+                    questions: inspection.questions
+                });
+                allInspectees.add(inspection.inspectee);
+                if (inspection.inspector) allInspectors.add(inspection.inspector);
+                processedCount++;
+            }
+
+            if (processedCount > 0) {
+                inspectionDataLoaded = true;
+                applyDateFilter();
+                updateAvailableViews();
+                populateFilters();
+                switchView('inspection_avg_score');
+                applyAllFilters();
+                statusMessage.innerHTML = `<p>Success! Processed ${processedCount} inspection records.</p>`;
+            } else {
+                statusMessage.innerHTML = `<p>No matching rooms found in inspection data.</p>`;
+            }
+            setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+        }
+        
+        function processLiveData(data) {
+            let headerRowIndex = -1;
+            let headerRow;
+            for (let i = 0; i < data.length; i++) {
+                if (data[i] && data[i].includes('Room') && data[i].includes('Attendant')) {
+                    headerRowIndex = i;
+                    headerRow = data[i];
+                    break;
+                }
+            }
+
+            if (headerRowIndex === -1) {
+                 statusMessage.innerHTML = `<p>Uploaded file is not a recognized live data format.</p>`;
+                 setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+                 return;
+            }
+
+            const normalizedHeader = headerRow.map(h => typeof h === 'string' ? h.trim().toLowerCase() : '');
+            const findCol = (possibleNames) => {
+                for (const name of possibleNames) {
+                    const index = normalizedHeader.indexOf(name.toLowerCase());
+                    if (index > -1) return index;
+                }
+                return -1;
+            };
+            
+            const COLS = {
+                ROOM: findCol(['Room']),
+                ATTENDANT: findCol(['Attendant']),
+                RES_STATUS: findCol(['Res Status']),
+                CLEAN_STATUS: findCol(['Clean Status', 'Clean  Status']), // Note the non-breaking space
+                ROOM_STATUS: findCol(['Room Status']),
+                IN_HOUSE: findCol(['In House']),
+                DUE_IN: findCol(['Due In']),
+                PRIORITY: findCol(['Priority'])
+            };
+
+            const rows = data.slice(headerRowIndex + 1);
+            let processedCount = 0;
+            rows.forEach(row => {
+                const roomNum = cleanRoomNumber(row[COLS.ROOM]);
+                if (!roomNum || !roomData[roomNum]) return;
+
+                const attendant = row[COLS.ATTENDANT] || 'Unassigned';
+                allAttendants.add(attendant);
+
+                roomData[roomNum].live = {
+                    attendant: attendant,
+                    resStatus: row[COLS.RES_STATUS] || '',
+                    cleanStatus: String(row[COLS.CLEAN_STATUS] || ''),
+                    roomStatus: row[COLS.ROOM_STATUS] || '',
+                    inHouse: row[COLS.IN_HOUSE] || '',
+                    dueIn: row[COLS.DUE_IN] || '',
+                    priority: parseInt(row[COLS.PRIORITY], 10) || 0,
+                };
+                processedCount++;
+            });
+
+            if (processedCount > 0) {
+                liveDataLoaded = true;
+                applyDateFilter(); 
+                updateAvailableViews();
+                populateFilters();
+                switchView('live_data');
+                applyAllFilters();
+                statusMessage.innerHTML = `<p>Success! Processed ${processedCount} live room status records.</p>`;
+            } else {
+                statusMessage.innerHTML = `<p>No matching rooms found in live data.</p>`;
+            }
+            setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+        }
+
+        function processAllUploadedData() {
+            Object.values(roomData).forEach(room => {
+                if (room.inspections && room.inspections.length > 0) {
+                    inspectionDataLoaded = true;
+                    room.inspections.forEach(insp => {
+                        if(insp.inspectee) allInspectees.add(insp.inspectee);
+                        if(insp.inspector) allInspectors.add(insp.inspector);
+                    });
+                }
+                if (room.surveys && room.surveys.length > 0) {
+                    surveyDataLoaded = true;
+                }
+                if (room.live) {
+                    liveDataLoaded = true;
+                    if(room.live.attendant) allAttendants.add(room.live.attendant);
+                }
+            });
+            applyDateFilter();
+            updateAvailableViews();
+            populateFilters();
+        }
+
+        // --- DATE FILTERING AND DATA RECALCULATION ---
+        function applyDateFilter() {
+            const startDateVal = document.getElementById('start-date').value;
+            const endDateVal = document.getElementById('end-date').value;
+
+            const startDate = startDateVal ? new Date(startDateVal + 'T00:00:00') : null;
+            const endDate = endDateVal ? new Date(endDateVal + 'T23:59:59') : null;
+
+            filteredRoomData = JSON.parse(JSON.stringify(roomData));
+
+            for (const roomNum in filteredRoomData) {
+                const room = filteredRoomData[roomNum];
+                if (room.surveys) {
+                    room.surveys = room.surveys.filter(s => {
+                        if (!s.date) return true;
+                        const surveyDate = new Date(s.date);
+                        const startMatch = startDate ? surveyDate >= startDate : true;
+                        const endMatch = endDate ? surveyDate <= endDate : true;
+                        return startMatch && endMatch;
+                    });
+                }
+                if (room.inspections) {
+                    room.inspections = room.inspections.filter(i => {
+                        if (!i.date) return true;
+                        const inspectionDate = new Date(i.date);
+                        const startMatch = startDate ? inspectionDate >= startDate : true;
+                        const endMatch = endDate ? inspectionDate <= endDate : true;
+                        return startMatch && endMatch;
+                    });
+                }
+            }
+            
+            calculateAllAverages();
+            switchView(currentView);
+            applyAllFilters();
+        }
+
+        function calculateAllAverages() {
+            inspecteeData = {};
+            inspectorData = {};
+            allInspectees.forEach(name => { inspecteeData[name] = { totalScore: 0, inspectionCount: 0, questionStats: {}, inspections: [] }; });
+            allInspectors.forEach(name => { inspectorData[name] = { totalScore: 0, inspectionCount: 0, inspections: [] }; });
+
+            for (const roomNum in filteredRoomData) {
+                const room = filteredRoomData[roomNum];
+                
+                delete room.survey_count;
+                delete room.survey_avg_overall;
+                delete room.survey_avg_staff;
+                delete room.survey_avg_cleanliness;
+                delete room.inspection_avg_score;
+                delete room.keywordMentions;
+
+                if (room.surveys && room.surveys.length > 0) {
+                    room.survey_count = room.surveys.length;
+                    room.survey_avg_overall = room.surveys.reduce((sum, s) => sum + (s.overall || 0), 0) / room.survey_count;
+                    room.survey_avg_staff = room.surveys.reduce((sum, s) => sum + (s.staff || 0), 0) / room.survey_count;
+                    room.survey_avg_cleanliness = room.surveys.reduce((sum, s) => sum + (s.cleanliness || 0), 0) / room.survey_count;
+                }
+                if (room.inspections && room.inspections.length > 0) {
+                    room.inspection_avg_score = room.inspections.reduce((sum, i) => sum + i.overallScore, 0) / room.inspections.length;
+                    
+                    room.inspections.forEach(insp => {
+                        const cm = inspecteeData[insp.inspectee];
+                        if (cm) {
+                            cm.totalScore += insp.overallScore;
+                            cm.inspectionCount++;
+                            cm.inspections.push({ room: roomNum, date: insp.date, inspector: insp.inspector, score: insp.overallScore });
+                            insp.questions.forEach(q => {
+                                if (!cm.questionStats[q.name]) {
+                                    cm.questionStats[q.name] = { pass: 0, fail: 0, total: 0, remarks: [] };
+                                }
+                                const stats = cm.questionStats[q.name];
+                                stats.total++;
+                                if (q.score === 1) stats.pass++;
+                                else {
+                                    stats.fail++;
+                                    if(q.remark) stats.remarks.push({room: roomNum, remark: q.remark, date: insp.date});
+                                }
+                            });
+                        }
+                        const ins = inspectorData[insp.inspector];
+                        if(ins) {
+                            ins.totalScore += insp.overallScore;
+                            ins.inspectionCount++;
+                            ins.inspections.push({ room: roomNum, date: insp.date, inspectee: insp.inspectee, score: insp.overallScore });
+                        }
+                    });
+                }
+            }
+            
+            for(const name in inspecteeData) { inspecteeData[name].averageScore = inspecteeData[name].inspectionCount > 0 ? inspecteeData[name].totalScore / inspecteeData[name].inspectionCount : 0; }
+            for(const name in inspectorData) { inspectorData[name].averageScore = inspectorData[name].inspectionCount > 0 ? inspectorData[name].totalScore / inspectorData[name].inspectionCount : 0; }
+        }
+
+        function updateAvailableViews(keywordActive = false) {
+            const viewSelect = document.getElementById('view-select');
+            
+            // Add static options if data is loaded
+            const addOptionIfNeeded = (value, text, condition) => {
+                if (condition && !viewSelect.querySelector(`[value="${value}"]`)) {
+                    const option = document.createElement('option');
+                    option.value = value;
+                    option.textContent = text;
+                    viewSelect.appendChild(option);
+                }
+            };
+            
+            addOptionIfNeeded('live_data', 'Live Room Status', liveDataLoaded);
+            addOptionIfNeeded('survey_avg_overall', 'Survey: Overall Score', surveyDataLoaded);
+            addOptionIfNeeded('survey_avg_staff', 'Survey: Staff Experience', surveyDataLoaded);
+            addOptionIfNeeded('survey_avg_cleanliness', 'Survey: Cleanliness', surveyDataLoaded);
+            addOptionIfNeeded('inspection_avg_score', 'Inspection: Overall Score', inspectionDataLoaded);
+
+            // Handle dynamic keyword option
+            const keywordOption = viewSelect.querySelector('[value="keyword_mention_frequency"]');
+            if (keywordActive && !keywordOption) {
+                const option = document.createElement('option');
+                option.value = 'keyword_mention_frequency';
+                option.textContent = 'Survey: Keyword Mentions';
+                viewSelect.appendChild(option);
+            } else if (!keywordActive && keywordOption) {
+                 if (viewSelect.value === 'keyword_mention_frequency') {
+                    viewSelect.value = 'default';
+                }
+                viewSelect.removeChild(keywordOption);
+            }
+        }
+
+        // --- INTERACTIVITY & VIEW MANAGEMENT ---
+        function onMouseMove(event) {
+            if (window.innerWidth < 1024 && detailsPanel.classList.contains('is-active')) {
+                resetHover();
+                return;
+            }
+            const rect = renderer.domElement.getBoundingClientRect();
+            const mouse = new THREE.Vector2(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1);
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(roomMeshArray, true);
+            let intersectedRoom = null;
+            if (intersects.length > 0) {
+                let object = intersects[0].object;
+                while(object.parent && !object.userData.roomNumber) { object = object.parent; }
+                if(object.userData.roomNumber && object.material.visible){ // Check if material is visible
+                    intersectedRoom = object;
+                }
+            }
+            
+            if (intersectedRoom && intersectedRoom !== hoveredRoom) {
+                resetHover();
+                hoveredRoom = intersectedRoom;
+                if (!selectedRooms.has(hoveredRoom.userData.roomNumber)) {
+                    hoveredRoom.material.emissive.set(COLORS.ROOM_HOVER_EMISSIVE);
+                }
+                updateTooltip(hoveredRoom, event.clientX, event.clientY);
+                tooltip.style.display = 'block';
+            } else if (!intersectedRoom) {
+                resetHover();
+            }
+        }
+        function resetHover() {
+            if (hoveredRoom && !selectedRooms.has(hoveredRoom.userData.roomNumber)) { 
+                hoveredRoom.material.emissive.set(0x000000); 
+            }
+            hoveredRoom = null;
+            tooltip.style.display = 'none';
+        }
+        function updateTooltip(roomMesh, x, y) {
+            const roomNum = roomMesh.userData.roomNumber;
+            let content = `<div class="font-bold text-lg">Room ${roomNum}</div>`;
+            const data = filteredRoomData[roomNum];
+            if (data) {
+                if(currentView === 'live_data' && data.live) {
+                    content += `<div>Attendant: ${data.live.attendant}</div>`;
+                    content += `<div>Status: ${data.live.roomStatus}</div>`;
+                    if (data.live.priority > 0) content += `<div>Priority: ${data.live.priority}</div>`;
+                } else if (currentView === 'default' && data.default) {
+                    content += `<div>Bed Type: ${data.default.bedType || 'N/A'}</div>`;
+                } else if (currentView.startsWith('survey_')) {
+                    const key = currentView.replace('survey_avg_', '');
+                    content += `<div class="capitalize">Avg. ${key}: ${data[currentView] ? data[currentView].toFixed(2) : 'N/A'}</div>`;
+                    content += `<div>Reviews: ${data.survey_count || 0}</div>`;
+                } else if (currentView === 'inspection_avg_score') {
+                    content += `<div>Avg. Inspection: ${data.inspection_avg_score ? (data.inspection_avg_score * 100).toFixed(0) + '%' : 'N/A'}</div>`;
+                    content += `<div>Inspections: ${data.inspections ? data.inspections.length : 0}</div>`;
+                } else if (currentView === 'keyword_mention_frequency') {
+                    content += `<div>Keyword Mentions: ${data.keywordMentions || 0}</div>`;
+                }
+            } else {
+                content += 'No data loaded.';
+            }
+            tooltip.innerHTML = content;
+            tooltip.style.left = `${x + 15}px`;
+            tooltip.style.top = `${y + 15}px`;
+        }
+
+        function onRoomClick(event) {
+            if (window.innerWidth < 1024 && detailsPanel.classList.contains('is-active')) {
+                return;
+            }
+            const rect = renderer.domElement.getBoundingClientRect();
+            const mouse = new THREE.Vector2(((event.clientX - rect.left) / rect.width) * 2 - 1, -((event.clientY - rect.top) / rect.height) * 2 + 1);
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(roomMeshArray, true);
+            if (intersects.length > 0) {
+                let object = intersects[0].object;
+                while(object.parent && !object.userData.roomNumber) { object = object.parent; }
+                if(object.userData.roomNumber && object.material.visible){
+                    if (object.userData.roomNumber === '2937') {
+                        triggerHotelParadeEasterEgg();
+                    } else {
+                        toggleRoomSelection(object.userData.roomNumber, keyStates['shift']);
+                        displayRoomDetailsPanel(object.userData.roomNumber);
+                    }
+                }
+            }
+        }
+
+        function highlightKeyword(text, keyword) {
+            if (!keyword || !text) return text;
+            const regex = new RegExp(`(${keyword})`, 'gi');
+            return text.replace(regex, `<mark class="bg-yellow-500 text-black rounded px-1">$1</mark>`);
+        }
+        
+        function closeDetailsPanel() {
+            detailsPanel.classList.add('hidden');
+        }
+
+        function displayRoomDetailsPanel(roomNum) {
+            detailsPanelTitle.textContent = `Room ${roomNum}`;
+            detailsPanelActions.innerHTML = ''; // Clear actions
+            
+            const data = filteredRoomData[roomNum];
+            const originalData = roomData[roomNum];
+            const keyword = document.getElementById('keyword-search').value.trim();
+            const searchScope = document.getElementById('search-scope').value;
+            const isKeywordSearchActive = keyword && (searchScope === 'all' || searchScope === 'surveys');
+            let contentHTML = '';
+
+            if (!originalData) {
+                contentHTML = '<p>No data loaded for this room.</p>';
+            } else {
+                if (originalData.live) {
+                    contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mb-2">
+                        <button class="details-accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                            <h4 class="text-lg font-semibold text-purple-400">Live Status</h4>
+                            <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="details-accordion-content"><div class="p-4 border-t border-gray-700"><ul class="space-y-2 text-sm">`;
+                    const liveMapping = { attendant: "Attendant", resStatus: "Reservation Status", cleanStatus: "Clean Status", roomStatus: "Room Status", inHouse: "In House", dueIn: "Due In", priority: "Priority" };
+                    for (const [key, label] of Object.entries(liveMapping)) {
+                        let value = originalData.live[key] || "N/A";
+                        contentHTML += `<li class="border-b border-gray-700 pb-1"><strong class="capitalize text-gray-400">${label}:</strong> <span>${value}</span></li>`;
+                   }
+                    contentHTML += '</ul></div></div></div>';
+                }
+                if (originalData.default) {
+                    contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mb-2">
+                        <button class="details-accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                            <h4 class="text-lg font-semibold text-blue-400">Room Information</h4>
+                            <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="details-accordion-content"><div class="p-4 border-t border-gray-700"><ul class="space-y-2 text-sm">`;
+                    const keyMapping = { roomType: "Room Type", bedType: "Bed Type", viewType: "View Type", occupancy: "Occupancy", ada: "ADA/Accessible", rollawayAllowed: "Rollaway Allowed?", connector: "Connector", specifications: "Specifications" };
+                    for (const [key, label] of Object.entries(keyMapping)) {
+                        let value = originalData.default[key] || "No";
+                        let style = (key === 'rollawayAllowed' && value.toLowerCase() === 'yes') ? 'text-green-400 font-bold' : '';
+                        contentHTML += `<li class="border-b border-gray-700 pb-1"><strong class="capitalize text-gray-400">${label}:</strong> <span class="${style}">${value}</span></li>`;
+                    }
+                    contentHTML += '</ul></div></div></div>';
+                }
+                if (data.inspections && data.inspections.length > 0) {
+                     contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mb-2">
+                        <button class="details-accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                            <h4 class="text-lg font-semibold text-green-400">Inspection History (${data.inspections.length})</h4>
+                            <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="details-accordion-content"><div class="p-4 border-t border-gray-700 space-y-4 comment-list-container custom-scrollbar">`; // <-- SCROLL ADDED
+                    data.inspections.forEach(insp => {
+                        const dateString = insp.date ? new Date(insp.date).toLocaleDateString() : '';
+                        contentHTML += `<div class="bg-gray-700/50 p-3 rounded-lg"><div class="flex justify-between items-baseline"><p class="text-xs text-gray-400">${dateString}</p><p>Score: <strong>${(insp.overallScore * 100).toFixed(0)}%</strong></p></div>`;
+                        contentHTML += `<p class="text-sm">Inspectee: <strong>${insp.inspectee}</strong> | Inspector: <strong>${insp.inspector || 'N/A'}</strong></p><div class="text-xs mt-2"><p class="font-bold mb-1">Questions:</p><ul class="mt-1 space-y-1 pl-2 border-l border-gray-600">`;
+                        insp.questions.forEach(q => {
+                            const scoreStyle = q.score === 1 ? 'text-green-400' : 'text-red-400';
+                            contentHTML += `<li><strong class="${scoreStyle}">${q.score === 1 ? 'PASS' : 'FAIL'}</strong> - ${q.name} ${q.remark ? `<span class="italic text-gray-400">- "${q.remark}"</span>` : ''}</li>`;
+                        });
+                        contentHTML += `</ul></div></div>`;
+                    });
+                    contentHTML += '</div></div></div>';
+                }
+                if (data.surveys && data.surveys.length > 0) {
+                    // ** NEW ** Filter surveys by keyword if a search is active
+                    const surveysToDisplay = isKeywordSearchActive 
+                        ? data.surveys.filter(s => s.comment && s.comment.toLowerCase().includes(keyword.toLowerCase()))
+                        : data.surveys;
+                    
+                    if (surveysToDisplay.length > 0) {
+                        contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mb-2">
+                            <button class="details-accordion-button w-full text-left p-3 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-between">
+                                <h4 class="text-lg font-semibold text-yellow-400">Medallia Survey History (${surveysToDisplay.length})</h4>
+                                <svg class="w-5 h-5 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="details-accordion-content"><div class="p-4 border-t border-gray-700 space-y-4 comment-list-container custom-scrollbar">`; // <-- SCROLL ADDED
+                        const sortedSurveys = [...surveysToDisplay].sort((a,b) => (b.date || 0) - (a.date || 0));
+                        sortedSurveys.forEach(survey => {
+                            const dateString = survey.date ? new Date(survey.date).toLocaleDateString() : 'Invalid Date';
+                            const displayComment = highlightKeyword(survey.comment || 'No comment.', keyword);
+                            contentHTML += `<div class="bg-gray-700/50 p-3 rounded-lg"><p class="text-xs text-gray-400 mb-2">${dateString}</p><div class="text-sm space-y-1 mb-2"><p><strong>Overall:</strong> ${survey.overall} | <strong>Staff:</strong> ${survey.staff} | <strong>Clean:</strong> ${survey.cleanliness}</p></div><p class="text-xs text-gray-300 italic">${displayComment}</p></div>`;
+                        });
+                        contentHTML += '</div></div></div>';
+                    }
+                }
+            }
+            detailsPanelContent.innerHTML = contentHTML;
+            detailsPanel.classList.remove('hidden');
+        }
+
+        function displayInspecteeAnalysisPanel(name) {
+            const cm = inspecteeData[name];
+            if (!cm) return;
+
+            detailsPanelTitle.textContent = `Analysis: ${name}`;
+            detailsPanelActions.innerHTML = `
+                <button id="export-panel-pdf-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-lg text-xs transition-colors">PDF</button>
+            `;
+
+            let contentHTML = '';
+
+            const relevantInspections = cm.inspections.filter(insp => 
+                selectedInspectors.size === 0 || selectedInspectors.has(insp.inspector)
+            );
+            
+            if (relevantInspections.length === 0) {
+                contentHTML = `<p class="text-sm text-gray-400 mt-2">No inspections found for the selected criteria.</p>`;
+            } else {
+                const totalScore = relevantInspections.reduce((sum, insp) => sum + insp.score, 0);
+                const averageScore = totalScore / relevantInspections.length;
+
+                contentHTML += `<div class="text-center my-2"><p class="text-gray-400">Overall Average</p><p class="text-3xl font-bold">${(averageScore * 100).toFixed(1)}%</p><p class="text-xs text-gray-400">from ${relevantInspections.length} inspections</p></div>`;
+                
+                // Accordion for Inspection Log
+                let inspectionLogHTML = '<div class="space-y-1 text-xs mb-2">';
+                relevantInspections.forEach(insp => {
+                    const dateStr = insp.date ? new Date(insp.date).toLocaleDateString() : 'N/A';
+                    inspectionLogHTML += `<div class="grid grid-cols-3 gap-1"><span>${dateStr}</span><span>w/ ${insp.inspector}</span><span class="text-right font-bold">${(insp.score * 100).toFixed(0)}%</span></div>`;
+                });
+                inspectionLogHTML += `</div>`;
+                contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mt-2">
+                    <button class="details-accordion-button w-full text-left p-2 rounded-md hover:bg-blue-600/50 transition-colors flex items-center justify-between text-sm"><span>Inspection Log</span><svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <div class="details-accordion-content"><div class="p-3 border-t border-gray-700 comment-list-container custom-scrollbar">${inspectionLogHTML}</div></div>
+                </div>`;
+
+                // Accordion for Question Breakdown
+                let questionBreakdownHTML = '<div class="space-y-2">';
+                const questionStats = {};
+                relevantInspections.forEach(insp => {
+                    const fullInspection = roomData[insp.room]?.inspections.find(i => i.date && insp.date && new Date(i.date).toISOString().split('T')[0] === new Date(insp.date).toISOString().split('T')[0] && i.inspector === insp.inspector);
+                    if (!fullInspection) return;
+                    fullInspection.questions.forEach(q => {
+                        if (!questionStats[q.name]) { questionStats[q.name] = { pass: 0, fail: 0, total: 0, remarks: [] }; }
+                        const stats = questionStats[q.name];
+                        stats.total++;
+                        if (q.score === 1) stats.pass++;
+                        else {
+                            stats.fail++;
+                            if(q.remark) stats.remarks.push({room: insp.room, remark: q.remark, date: insp.date});
+                        }
+                    });
+                });
+                const sortedQuestions = Object.entries(questionStats).sort((a, b) => (b[1].fail/b[1].total) - (a[1].fail/a[1].total));
+                for (const [qName, stats] of sortedQuestions) {
+                    const failRate = stats.total > 0 ? (stats.fail / stats.total) * 100 : 0;
+                    questionBreakdownHTML += `<div class="text-sm"><div class="flex justify-between items-baseline"><span>${qName}</span><span class="font-mono">${stats.pass}/${stats.total} pass</span></div><div class="w-full bg-gray-600 rounded-full h-2.5"><div class="bg-red-500 h-2.5 rounded-full" style="width: ${failRate}%"></div></div>`;
+                    if(stats.remarks.length > 0) {
+                        questionBreakdownHTML += `<p class="text-xs mt-1 font-bold text-gray-400">Fail Remarks:</p><ul class="list-disc pl-5 mt-1 text-gray-300 text-xs">`;
+                        stats.remarks.forEach(r => {
+                            const dateString = r.date ? new Date(r.date).toLocaleDateString() : '';
+                            questionBreakdownHTML += `<li><strong>(${dateString})</strong> Room ${r.room}: ${r.remark}</li>`;
+                        });
+                        questionBreakdownHTML += `</ul>`;
+                    }
+                    questionBreakdownHTML += `</div>`;
+                }
+                questionBreakdownHTML += `</div>`;
+                contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mt-2">
+                    <button class="details-accordion-button w-full text-left p-2 rounded-md hover:bg-blue-600/50 transition-colors flex items-center justify-between text-sm"><span>Question Breakdown</span><svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                    <div class="details-accordion-content"><div class="p-3 border-t border-gray-700 comment-list-container custom-scrollbar">${questionBreakdownHTML}</div></div>
+                </div>`;
+
+                // Accordion for Survey Comparison
+                if (surveyDataLoaded) {
+                    let comparisonData = [];
+                    relevantInspections.forEach(insp => {
+                        const room = filteredRoomData[insp.room];
+                        if (!room || !room.surveys || !insp.date) return;
+                        const inspDateStr = new Date(insp.date).toISOString().split('T')[0];
+                        const matchingSurveys = room.surveys.filter(s => s.date && new Date(s.date).toISOString().split('T')[0] === inspDateStr);
+                        if (matchingSurveys.length > 0) {
+                            comparisonData.push({ inspection: insp, survey: matchingSurveys[0] });
+                        }
+                    });
+                    
+                    let surveyComparisonHTML = '';
+                    if (comparisonData.length > 0) {
+                        surveyComparisonHTML += `<div class="mb-4 p-1 bg-gray-900/50 rounded-lg">
+                            <h5 class="font-bold mb-2 text-sm">Cleanliness Score Correlation</h5>
+                            <canvas id="comparison-chart" class="w-full h-64"></canvas>
+                        </div><div class="space-y-3 text-xs">`;
+                        comparisonData.forEach(({ inspection, survey }) => {
+                            const inspScorePct = (inspection.score * 100).toFixed(0);
+                            surveyComparisonHTML += `<div class="p-2 bg-gray-700/50 rounded-md">
+                                <div class="font-bold text-sm mb-1">Room ${inspection.room} on ${new Date(inspection.date).toLocaleDateString()}</div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div><div class="font-semibold text-green-400">Inspection</div><div>Score: <span class="font-bold">${inspScorePct}%</span></div><div>By: ${inspection.inspector}</div></div>
+                                    <div><div class="font-semibold text-yellow-400">Guest Survey</div><div>Cleanliness: <span class="font-bold">${survey.cleanliness}/5</span></div><div>Overall: <span class="font-bold">${survey.overall}/5</span></div></div>
+                                </div>
+                                ${survey.comment ? `<div class="mt-2 pt-2 border-t border-gray-600/50 italic text-gray-300">"${survey.comment}"</div>` : ''}
+                            </div>`;
+                        });
+                        surveyComparisonHTML += `</div>`;
+                    } else {
+                        surveyComparisonHTML += `<p class="text-sm text-gray-400 mt-2">No inspections found with a matching guest survey on the same day.</p>`;
+                    }
+                    contentHTML += `<div class="details-accordion-item bg-gray-900/50 rounded-lg mt-2">
+                        <button class="details-accordion-button w-full text-left p-2 rounded-md hover:bg-blue-600/50 transition-colors flex items-center justify-between text-sm"><span>Inspection vs. Guest Survey</span><svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="details-accordion-content"><div class="p-3 border-t border-gray-700 comment-list-container custom-scrollbar">${surveyComparisonHTML}</div></div>
+                    </div>`;
+                }
+            }
+
+            detailsPanelContent.innerHTML = contentHTML;
+            detailsPanel.classList.remove('hidden');
+
+            // Render chart
+            const chartCanvas = document.getElementById('comparison-chart');
+            if (chartCanvas) {
+                let comparisonData = [];
+                relevantInspections.forEach(insp => {
+                    const room = filteredRoomData[insp.room];
+                    if (!room || !room.surveys || !insp.date) return;
+                    const inspDateStr = new Date(insp.date).toISOString().split('T')[0];
+                    const matchingSurveys = room.surveys.filter(s => s.date && new Date(s.date).toISOString().split('T')[0] === inspDateStr);
+                    if (matchingSurveys.length > 0) {
+                        comparisonData.push({ inspection: insp, survey: matchingSurveys[0] });
+                    }
+                });
+                const chartData = comparisonData.map(({ inspection, survey }) => ({ x: inspection.score, y: survey.cleanliness }));
+                new Chart(chartCanvas, {
+                    type: 'scatter',
+                    data: { datasets: [{ label: 'Inspection vs Survey Cleanliness', data: chartData, backgroundColor: 'rgba(54, 162, 235, 0.6)' }] },
+                    options: {
+                        scales: {
+                            x: { type: 'linear', position: 'bottom', title: { display: true, text: 'Inspection Score (0-1)', color: '#fff' }, min: 0, max: 1, ticks: { color: '#fff' } },
+                            y: { title: { display: true, text: 'Guest Cleanliness Score (1-5)', color: '#fff' }, min: 1, max: 5, ticks: { color: '#fff', stepSize: 1 } }
+                        },
+                        plugins: { legend: { labels: { color: '#fff' } } }
+                    }
+                });
+            }
+        }
+
+        function displayTopBottomPerformers() {
+            let contentHTML = '';
+            
+            // Inspections Data
+            if (inspectionDataLoaded) {
+                const performers = Object.entries(inspecteeData)
+                    .filter(([name, data]) => data.inspectionCount > 0)
+                    .sort(([, a], [, b]) => b.averageScore - a.averageScore);
+
+                contentHTML += `<h4 class="font-bold text-lg mb-2 text-green-400">Top 5 Inspection Performers</h4><div class="space-y-2 mb-4">`;
+                performers.slice(0, 5).forEach(([name, data]) => {
+                    contentHTML += `<div class="flex justify-between p-2 bg-gray-900/50 rounded"><span>${name} <span class="text-xs text-gray-400">(${data.inspectionCount} insp.)</span></span><span class="font-bold">${(data.averageScore * 100).toFixed(1)}%</span></div>`;
+                });
+                contentHTML += `</div>`;
+                
+                contentHTML += `<h4 class="font-bold text-lg mb-2 text-red-400">Bottom 5 Inspection Performers</h4><div class="space-y-2 mb-6">`;
+                performers.slice(-5).reverse().forEach(([name, data]) => {
+                    contentHTML += `<div class="flex justify-between p-2 bg-gray-900/50 rounded"><span>${name} <span class="text-xs text-gray-400">(${data.inspectionCount} insp.)</span></span><span class="font-bold">${(data.averageScore * 100).toFixed(1)}%</span></div>`;
+                });
+                contentHTML += `</div>`;
+            }
+
+            // Survey Data
+            if (surveyDataLoaded) {
+                 const roomsWithScores = Object.entries(filteredRoomData)
+                    .filter(([_, room]) => room.survey_avg_overall !== undefined && room.survey_count > 0)
+                    .map(([roomNum, room]) => ({ roomNum, score: room.survey_avg_overall, count: room.survey_count }))
+                    .sort((a, b) => b.score - a.score);
+
+                contentHTML += `<h4 class="font-bold text-lg mb-2 text-yellow-400 border-t border-gray-700 pt-4">Top 5 Rooms (Guest Survey)</h4><div class="space-y-2 mb-4">`;
+                roomsWithScores.slice(0, 5).forEach(room => {
+                    contentHTML += `<button data-room-num="${room.roomNum}" class="w-full room-link-btn flex justify-between p-2 bg-gray-900/50 rounded hover:bg-gray-700 transition-colors"><span>Room ${room.roomNum} <span class="text-xs text-gray-400">(${room.count} reviews)</span></span><span class="font-bold">${room.score.toFixed(2)}</span></button>`;
+                });
+                contentHTML += `</div>`;
+
+                contentHTML += `<h4 class="font-bold text-lg mb-2 text-orange-400">Bottom 5 Rooms (Guest Survey)</h4><div class="space-y-2">`;
+                roomsWithScores.slice(-5).reverse().forEach(room => {
+                    contentHTML += `<button data-room-num="${room.roomNum}" class="w-full room-link-btn flex justify-between p-2 bg-gray-900/50 rounded hover:bg-gray-700 transition-colors"><span>Room ${room.roomNum} <span class="text-xs text-gray-400">(${room.count} reviews)</span></span><span class="font-bold">${room.score.toFixed(2)}</span></button>`;
+                });
+                contentHTML += `</div>`;
+            }
+
+            if (!inspectionDataLoaded && !surveyDataLoaded) {
+                 contentHTML = `<p class="text-center text-gray-400">Please upload inspection or survey data first.</p>`;
+            }
+
+            performersContent.innerHTML = contentHTML;
+
+            // Add event listeners to the new buttons
+            performersContent.querySelectorAll('.room-link-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const roomNum = btn.dataset.roomNum;
+                    const mesh = roomMeshes[roomNum];
+                    if (mesh) {
+                        performersModal.style.display = 'none';
+                        zoomToRoom(mesh);
+                        toggleRoomSelection(roomNum, false); // Select just this room
+                        displayRoomDetailsPanel(roomNum);
+                    }
+                });
+            });
+
+            performersModal.style.display = 'flex';
+        }
+        
+        function triggerHotelParadeEasterEgg() {
+            if (typeof Tone === 'undefined' || isParadePlaying) return;
+            
+            isParadePlaying = true;
+            Tone.start();
+            
+            const originalColors = new Map();
+            Object.values(roomMeshes).forEach(mesh => {
+                originalColors.set(mesh, mesh.material.color.clone());
+            });
+
+            const leadSynth = new Tone.FMSynth({
+                harmonicity: 3,
+                modulationIndex: 10,
+                envelope: { attack: 0.01, decay: 0.2, release: 0.2 }
+            }).toDestination();
+
+            const harmonySynth = new Tone.AMSynth({
+                 envelope: { attack: 0.01, decay: 0.3, release: 0.2 }
+            }).toDestination();
+            
+            const melodyPart = [
+              { time: '0:1:0', note: 'E5', duration: '16n' }, { time: '2:1:0', note: 'E5', duration: '16n' },
+              { time: '0:0:3', note: 'D5', duration: '16n' }, { time: '2:0:3', note: 'D5', duration: '16n' },
+              { time: '0:0:2', note: 'C#5', duration: '16n' }, { time: '1:1:0', note: 'C#5', duration: '16n' },
+              { time: '1:1:2', note: 'C#5', duration: '16n' }, { time: '1:2:1', note: 'C#5', duration: '16n' },
+              { time: '2:0:2', note: 'C#5', duration: '16n' }, { time: '3:0:2', note: 'C#5', duration: '16n' },
+              { time: '3:1:1', note: 'C#5', duration: '16n' }, { time: '0:2:2', note: 'B4', duration: '16n' },
+              { time: '1:0:3', note: 'B4', duration: '16n' }, { time: '1:1:1', note: 'B4', duration: '16n' },
+              { time: '1:2:0', note: 'B4', duration: '16n' }, { time: '1:2:2', note: 'B4', duration: '16n' },
+              { time: '2:2:2', note: 'B4', duration: '16n' }, { time: '3:0:1', note: 'B4', duration: '16n' },
+              { time: '3:1:0', note: 'B4', duration: '16n' }, { time: '3:1:2', note: 'B4', duration: '16n' },
+              { time: '0:0:0', note: 'A4', duration: '16n' }, { time: '0:1:2', note: 'A4', duration: '16n' },
+              { time: '0:2:3', note: 'A4', duration: '16n' }, { time: '1:0:0', note: 'A4', duration: '16n' },
+              { time: '1:0:2', note: 'A4', duration: '16n' }, { time: '1:1:3', note: 'A4', duration: '16n' },
+              { time: '1:2:3', note: 'A4', duration: '16n' }, { time: '2:0:0', note: 'A4', duration: '16n' },
+              { time: '2:1:2', note: 'A4', duration: '16n' }, { time: '2:2:3', note: 'A4', duration: '16n' },
+              { time: '3:0:0', note: 'A4', duration: '16n' }, { time: '3:0:3', note: 'A4', duration: '16n' },
+              { time: '3:1:3', note: 'A4', duration: '16n' }, { time: '3:3:0', note: 'A4', duration: '16n' },
+              { time: '0:1:3', note: 'G#4', duration: '16n' }, { time: '0:3:0', note: 'G#4', duration: '16n' },
+              { time: '0:3:2', note: 'G#4', duration: '16n' }, { time: '1:3:0', note: 'G#4', duration: '16n' },
+              { time: '1:3:2', note: 'G#4', duration: '16n' }, { time: '2:1:3', note: 'G#4', duration: '16n' },
+              { time: '2:3:0', note: 'G#4', duration: '16n' }, { time: '2:3:2', note: 'G#4', duration: '16n' },
+              { time: '3:2:0', note: 'G#4', duration: '16n' }, { time: '3:2:2', note: 'G#4', duration: '16n' },
+              { time: '0:2:0', note: 'F#4', duration: '16n' }, { time: '0:3:1', note: 'F#4', duration: '16n' },
+              { time: '1:3:1', note: 'F#4', duration: '16n' }, { time: '2:2:0', note: 'F#4', duration: '16n' },
+              { time: '2:3:1', note: 'F#4', duration: '16n' }, { time: '3:2:1', note: 'F#4', duration: '16n' },
+              { time: '0:3:3', note: 'E4', duration: '16n' }, { time: '1:3:3', note: 'E4', duration: '16n' },
+              { time: '2:3:3', note: 'E4', duration: '16n' }, { time: '3:2:3', note: 'E4', duration: '16n' },
+              { time: '3:3:0', note: 'E4', duration: '16n' },
+              { time: '4:0:0', note: 'B4', duration: '16n' }, { time: '4:0:2', note: 'G#4', duration: '16n' },
+              { time: '4:1:0', note: 'E4', duration: '16n' }, { time: '4:1:2', note: 'G#4', duration: '16n' },
+              { time: '4:2:0', note: 'B4', duration: '16n' }, { time: '4:2:2', note: 'C5', duration: '16n' },
+              { time: '4:3:0', note: 'B4', duration: '16n' }, { time: '4:3:2', note: 'G#4', duration: '16n' },
+              { time: '5:0:0', note: 'B4', duration: '8n' }
+            ].sort((a, b) => Tone.Time(a.time).toSeconds() - Tone.Time(b.time).toSeconds());
+
+            const harmonyPart = [
+              { time: '0:0:0', note: 'A2', duration: '1n' },
+              { time: '1:0:0', note: 'G2', duration: '1n' },
+              { time: '2:0:0', note: 'D3', duration: '1n' },
+              { time: '3:0:0', note: 'A2', duration: '1n' },
+              { time: '4:0:0', note: 'E3', duration: '1n' },
+              { time: '5:0:0', note: 'A2', duration: '1n' }
+            ];
+
+            const melody = new Tone.Part((time, value) => {
+                leadSynth.triggerAttackRelease(value.note, value.duration, time);
+                Object.values(roomMeshes).forEach(mesh => {
+                     mesh.material.color.set(COLORS.RAINBOW[Math.floor(Math.random() * COLORS.RAINBOW.length)]);
+                });
+            }, melodyPart);
+
+            const harmony = new Tone.Part((time, value) => {
+                harmonySynth.triggerAttackRelease(value.note, value.duration, time);
+            }, harmonyPart);
+            
+            melody.loop = false;
+            harmony.loop = false;
+
+            melody.start(0);
+            harmony.start(0);
+            
+            Tone.Transport.start();
+
+            setTimeout(() => {
+                Tone.Transport.stop();
+                melody.dispose();
+                harmony.dispose();
+                leadSynth.dispose();
+                harmonySynth.dispose();
+                originalColors.forEach((color, mesh) => {
+                    mesh.material.color.set(color);
+                });
+                isParadePlaying = false;
+                // Refresh view to restore correct colors after easter egg
+                switchView(currentView);
+                applyAllFilters();
+            }, 11000);
+        }
+
+        // MODIFIED: Simplified switchView to only handle coloring/labeling
+        function switchView(viewName) {
+            currentView = viewName;
+            
+            // Sync view selects
+            document.getElementById('view-select').value = viewName;
+            
+            updateLegend();
+            updateTowerAveragesDisplay();
+            
+            document.querySelectorAll('.attendant-filter-container label').forEach(label => {
+                label.classList.toggle('text-green-400', viewName === 'live_data');
+                label.classList.toggle('text-gray-300', viewName !== 'live_data');
+            });
+
+            Object.entries(roomMeshes).forEach(([roomNum, mesh]) => {
+                const data = filteredRoomData[roomNum];
+                mesh.userData.isPulsing = false;
+                let color = COLORS.ROOM_DEFAULT;  
+                let label2 = null;
+
+                const labelsToRemove = mesh.children.filter(child => child.userData.isLabel);
+                labelsToRemove.forEach(label => mesh.remove(label));
+
+                if (data) {
+                    let labelText = roomNum;
+                    let labelOptions = {};
+                    let planeWidth = 4.5;
+                    let planeHeight = 2.25;
+                    
+                    if (roomNum === '2937') {
+                        labelText = '🎵 High Key Club 🎵';
+                        labelOptions.font = 'Lobster';
+                        labelOptions.fontSize = 50;
+                        planeWidth = 12;
+                        planeHeight = 3;
+                        color = getBedTypeColor("Lounge"); // Always set to default lounge color
+                    } else if (data.default) {
+                        if (data.default.specifications?.toLowerCase().includes('club')) { labelOptions.color = '#FFD700'; }
+                        else if (data.default.ada) { labelOptions.color = '#C0C0C0'; }
+                    }
+
+                    if (viewName === 'live_data' && data.live && roomNum !== '2937') {
+                        const { cleanStatus, roomStatus, resStatus, priority, attendant } = data.live;
+                        
+                        let baseColor = COLORS.ROOM_DEFAULT;
+                        const lowerCleanStatus = cleanStatus.trim().toLowerCase();
+
+                        if (lowerCleanStatus.includes('inspected')) baseColor = COLORS.LIVE_INSPECTED;
+                        else if (lowerCleanStatus.includes('clean')) baseColor = COLORS.LIVE_CLEAN;
+                        else if (lowerCleanStatus.includes('dirty')) baseColor = COLORS.LIVE_DIRTY;
+                        
+                        let finalColor = baseColor;
+                        
+                        const isDeparture = resStatus.includes('Checked Out') || resStatus.includes('Due Out');
+                        const isQueueRoom = priority > 200 && !resStatus.includes('Stay Over');
+
+                        if (attendant.toUpperCase() === 'REX OOO/OOS') {
+                            finalColor = COLORS.ROOM_DEFAULT;
+                            mesh.userData.isPulsing = false;
+                        } else if (isDeparture && !roomStatus.includes('Return Later')) {
+                            finalColor = COLORS.PULSE_RED;
+                        } else if (isQueueRoom && !lowerCleanStatus.includes('inspected') && !lowerCleanStatus.includes('clean')) {
+                            mesh.userData.isPulsing = true;
+                            if (roomStatus.includes('Return Later')) {
+                                mesh.userData.pulseColor1 = COLORS.PULSE_RED;
+                                mesh.userData.pulseColor2 = COLORS.PULSE_ORANGE;
+                            } else {
+                                mesh.userData.pulseColor1 = COLORS.PULSE_RED;
+                                mesh.userData.pulseColor2 = COLORS.PULSE_GREY;
+                            }
+                        } else if (attendant === 'UNASSIGNED') {
+                            mesh.userData.isPulsing = true;
+                            mesh.userData.pulseColor1 = baseColor.clone();
+                            mesh.userData.pulseColor2 = COLORS.PULSE_PURPLE;
+                        } else if (roomStatus.includes('Cleaning Started')) {
+                            mesh.userData.isPulsing = true;
+                            mesh.userData.pulseColor1 = COLORS.PULSE_GREY;
+                            mesh.userData.pulseColor2 = COLORS.LIVE_INSPECTED;
+                        } else if (roomStatus.includes('Return Later')) {
+                            mesh.userData.isPulsing = true;
+                            mesh.userData.pulseColor1 = isDeparture ? COLORS.PULSE_RED : COLORS.LIVE_DIRTY;
+                            mesh.userData.pulseColor2 = COLORS.PULSE_YELLOW;
+                        } else if (roomStatus.includes('DND') || roomStatus.includes('Service Refused')) {
+                            finalColor = COLORS.LIVE_DND;
+                        }
+                        
+                        if (roomStatus.includes('Awaiting Service')) labelOptions.color = '#FFFFFF';
+                        
+                        let emojiString = '';
+                        if (resStatus.includes('Stay Over')) emojiString += '🧑';
+                        if (resStatus.includes('Due In') && resStatus.includes('Checked Out')) emojiString += '🚗✈️';
+                        else if (resStatus.includes('Due In') && resStatus.includes('Due Out')) emojiString += '🚗🧳';
+                        else if (resStatus.includes('Due In')) emojiString += '➡️';
+                        else if (resStatus.includes('Checked Out')) emojiString += '✈️';
+                        else if (resStatus.includes('Due Out')) emojiString += '�';
+                        if (roomStatus.includes('Service Refused')) emojiString += '🚫';
+                        
+                        labelText = `${emojiString} ${roomNum}`;
+                        
+                        color = finalColor;
+
+                    } else if (viewName === 'default' && data.default && roomNum !== '2937') {
+                        color = getBedTypeColor(data.default.bedType);
+                    } else if (viewName.startsWith('survey_') && roomNum !== '2937') {
+                        const avgScore = data[viewName];
+                        if (avgScore !== undefined) {
+                            color = getHeatmapColor(avgScore, 1, 5);
+                            label2 = `Reviews: ${data.survey_count || 0}`;
+                        }
+                    } else if (viewName === 'inspection_avg_score' && roomNum !== '2937') {
+                        let score, count = 0;
+                        if (data.inspections && data.inspections.length > 0) {
+                            const relevantInspections = data.inspections.filter(i => 
+                                (selectedInspectees.size === 0 || selectedInspectees.has(i.inspectee)) &&
+                                (selectedInspectors.size === 0 || selectedInspectors.has(i.inspector))
+                            );
+                            if (relevantInspections.length > 0) {
+                                score = relevantInspections.reduce((sum, i) => sum + i.overallScore, 0) / relevantInspections.length;
+                                count = relevantInspections.length;
+                            }
+                        }
+                        if (score !== undefined) {
+                            color = getHeatmapColor(score, 0, 1);
+                            label2 = `Inspections: ${count}`;
+                        }
+                    } else if (viewName === 'keyword_mention_frequency' && roomNum !== '2937') {
+                        // Coloring for this view is now handled in applyAllFilters to avoid circular dependencies
+                        color = COLORS.ROOM_DEFAULT;
+                        const mentionCount = data.keywordMentions || 0;
+                        if (mentionCount > 0) {
+                             label2 = `Mentions: ${mentionCount}`;
+                        }
+                    }
+                    
+                    const dims = mesh.geometry.parameters;
+                    const offset = 0.1;
+                    const faces = [
+                        { pos: [0, 0, dims.depth / 2 + offset], rot: [0, 0, 0], side: 'front' }, 
+                        { pos: [0, 0, -dims.depth / 2 - offset], rot: [0, Math.PI, 0], side: 'back' },
+                        { pos: [dims.width / 2 + offset, 0, 0], rot: [0, Math.PI / 2, 0], side: 'right' }, 
+                        { pos: [-dims.width / 2 - offset, 0, 0], rot: [0, -Math.PI / 2, 0], side: 'left' }
+                    ];
+
+                    faces.forEach(face => {
+                        if (roomNum === '2937' && (face.side === 'right' || face.side === 'left')) {
+                            return;
+                        }
+                        const label = createLabel(labelText, label2, labelOptions, planeWidth, planeHeight);
+                        label.position.set(...face.pos);
+                        label.rotation.set(...face.rot);
+                        mesh.add(label);
+                    });
+                }
+                
+                if (!mesh.userData.isPulsing) {
+                    mesh.material.color.set(color);
+                }
+                mesh.userData.originalColor.set(color);
+            });
+            updateAllSelectionOutlines();
+        }
+        
+        function getBedTypeColor(bedType) {
+            const bedTypeColors = { '2 Queen and Daybed': new THREE.Color('#8899ff'), 'King Suite with Trundle': new THREE.Color('#aaaaff'), '2 Queen': new THREE.Color('#5566ff'), 'King with Sleeper Chair': new THREE.Color('#ff8866'), '1 King': new THREE.Color('#ff9900'), 'King Suite': new THREE.Color('#cc55ff'), 'King with Daybed': new THREE.Color('#ff9966'), 'King with 2 queen and sofabed': new THREE.Color('#ffbbaa'), '2 Queen and Sofabed': new THREE.Color('#ff2200'), '2 Queen with Sofa Bed': new THREE.Color('#ff2200'), '1 King Murphy Bed': new THREE.Color('#cccc66'), 'Signature Suite': new THREE.Color('#cc99ff'), 'Lounge': new THREE.Color('#f5f6fa'), };
+            return bedTypeColors[bedType] || COLORS.ROOM_DEFAULT;
+        }
+
+        function getHeatmapColor(value, min, max) {
+            const ratio = Math.max(0, Math.min(1, (value - min) / (max - min)));
+            const colorIndex = Math.min(COLORS.HEATMAP.length - 1, Math.floor(ratio * COLORS.HEATMAP.length));
+            return new THREE.Color(COLORS.HEATMAP[colorIndex]);
+        }
+        
+        function getKeywordMentionHeatmapColor(count, maxCount) {
+            if (count <= 0) return COLORS.ROOM_DEFAULT;
+            if (count === 1 && maxCount <= 1) return new THREE.Color('#16a34a'); // Dark green if it's the only one
+            
+            // Normalize from 0 (for count 1) to 1 (for maxCount)
+            const ratio = Math.min(1, (count - 1) / (maxCount - 1 || 1)); 
+            
+            const green = new THREE.Color('#16a34a'); // dark green
+            const yellow = new THREE.Color('#facc15');
+            const red = new THREE.Color('#dc2626');
+
+            // Interpolate between green -> yellow -> red
+            if (ratio < 0.5) {
+                return green.lerp(yellow, ratio * 2);
+            } else {
+                return yellow.lerp(red, (ratio - 0.5) * 2);
+            }
+        }
+
+        function updateLegend() {
+            const viewSelect = document.getElementById('view-select');
+            let title = viewSelect.options[viewSelect.selectedIndex].text;
+            let content = '';
+
+            if (currentView === 'default') {
+                const bedTypes = [...new Set(Object.values(roomData).map(d => d.default?.bedType).filter(Boolean))];
+                bedTypes.sort().forEach(bedType => {
+                    const color = getBedTypeColor(bedType);
+                    content += `<div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${color.getStyle()};"></div><span>${bedType}</span></div>`;
+                });
+            } else if (currentView.startsWith('survey_')) {
+                content = '<div class="flex items-center justify-between text-xs text-gray-400 px-1"><span>Low (1)</span><span>High (5)</span></div>';
+                const gradient = COLORS.HEATMAP.join(', ');
+                content += `<div class="w-full h-4 rounded-full mt-1" style="background: linear-gradient(to right, ${gradient});"></div>`;
+            } else if (currentView === 'inspection_avg_score') {
+                content = '<div class="flex items-center justify-between text-xs text-gray-400 px-1"><span>Low (0%)</span><span>High (100%)</span></div>';
+                const gradient = COLORS.HEATMAP.join(', ');
+                content += `<div class="w-full h-4 rounded-full mt-1" style="background: linear-gradient(to right, ${gradient});"></div>`;
+            } else if (currentView === 'keyword_mention_frequency') {
+                content = `<div class="flex items-center justify-between text-xs text-gray-400 px-1"><span>1</span><span>${maxKeywordMentions > 0 ? maxKeywordMentions : '...'}</span></div>`;
+                const gradient = `linear-gradient(to right, #16a34a, #facc15, #dc2626)`;
+                content += `<div class="w-full h-4 rounded-full mt-1" style="background: ${gradient};"></div>`;
+            } else if (currentView === 'live_data') {
+                content = `
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${COLORS.LIVE_INSPECTED.getStyle()};"></div><span>Inspected</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${COLORS.LIVE_CLEAN.getStyle()};"></div><span>Clean</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${COLORS.LIVE_DIRTY.getStyle()};"></div><span>Dirty</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${COLORS.PULSE_RED.getStyle()};"></div><span>Checkout / Departure</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${COLORS.LIVE_DND.getStyle()};"></div><span>DND / Refused</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background-color: ${COLORS.ROOM_DEFAULT.getStyle()};"></div><span>Out of Order / OOS</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background: linear-gradient(90deg, ${COLORS.PULSE_GREY.getStyle()}, ${COLORS.LIVE_INSPECTED.getStyle()});"></div><span>Cleaning Started</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background: linear-gradient(90deg, ${COLORS.PULSE_RED.getStyle()}, ${COLORS.PULSE_YELLOW.getStyle()});"></div><span>Return Later (Departure)</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background: linear-gradient(90deg, ${COLORS.LIVE_DIRTY.getStyle()}, ${COLORS.PULSE_YELLOW.getStyle()});"></div><span>Return Later (Stay Over)</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background: linear-gradient(90deg, ${COLORS.PULSE_RED.getStyle()}, ${COLORS.PULSE_GREY.getStyle()});"></div><span>Queue Room</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background: linear-gradient(90deg, ${COLORS.PULSE_RED.getStyle()}, ${COLORS.PULSE_ORANGE.getStyle()});"></div><span>Queue Room (Return)</span></div>
+                    <div class="flex items-center mb-1"><div class="w-4 h-4 rounded-sm mr-2" style="background: linear-gradient(90deg, ${COLORS.PULSE_PURPLE.getStyle()}, ${COLORS.ROOM_DEFAULT.getStyle()});"></div><span>Unassigned</span></div>
+                `;
+            }
+            
+            legendContainer.innerHTML = `<h3 class="font-bold text-md mb-2">${title}</h3><div>${content}</div>`;
+        }
+
+        function updateTowerAveragesDisplay() {
+            if (!currentView.startsWith('survey_') && currentView !== 'inspection_avg_score') {
+                towerAveragesContainer.style.display = 'none';
+                return;
+            }
+
+            let totals = {};
+            let counts = {};
+            allTowers.forEach(tower => { totals[tower] = 0; counts[tower] = 0; });
+            let overallTotal = 0;
+            let overallCount = 0;
+
+            for (const roomNum in filteredRoomData) {
+                const room = filteredRoomData[roomNum];
+                const tower = roomMeshes[roomNum]?.userData.tower;
+                if (!tower) continue;
+
+                if (currentView.startsWith('survey_') && room[currentView] !== undefined) {
+                    totals[tower] += room[currentView] * (room.survey_count || 1);
+                    counts[tower] += (room.survey_count || 1);
+                } else if (currentView === 'inspection_avg_score' && room.inspection_avg_score !== undefined) {
+                    totals[tower] += room.inspection_avg_score * (room.inspections.length || 1);
+                    counts[tower] += (room.inspections.length || 1);
+                }
+            }
+
+            let contentHTML = '<h3 class="font-bold text-md mb-2">Averages</h3>';
+            Array.from(allTowers).sort().forEach(tower => {
+                const avg = counts[tower] > 0 ? (totals[tower] / counts[tower]) : 0;
+                const displayAvg = currentView.startsWith('survey_') ? avg.toFixed(2) : (avg * 100).toFixed(0) + '%';
+                contentHTML += `<div><strong>${tower}:</strong> ${counts[tower] > 0 ? displayAvg : 'N/A'}</div>`;
+                overallTotal += totals[tower];
+                overallCount += counts[tower];
+            }
+            );
+            
+            const overallAvg = overallCount > 0 ? (overallTotal / overallCount) : 0;
+            const displayOverallAvg = currentView.startsWith('survey_') ? overallAvg.toFixed(2) : (overallAvg * 100).toFixed(0) + '%';
+            contentHTML += `<div class="border-t border-gray-700 mt-1 pt-1"><strong>DLH Overall:</strong> ${displayOverallAvg}</div>`;
+
+            towerAveragesContainer.innerHTML = contentHTML;
+            towerAveragesContainer.style.display = 'block';
+        }
+
+        // --- FILTERING LOGIC ---
+        function populateFilters() {
+            const createCheckbox = (container, value, label, categorySet) => {
+                const id = `${container.className.split(' ')[0]}-${value.replace(/[^a-zA-Z0-9]/g, '-')}`;
+                const wrapper = document.createElement('div');
+                wrapper.className = 'flex items-center';
+                const labelClass = (container.classList.contains('attendant-filter-container') && currentView === 'live_data') ? 'text-green-400' : 'text-gray-300';
+                wrapper.innerHTML = `<input id="${id}" type="checkbox" value="${value}" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-600 ring-offset-gray-800 focus:ring-2"><label for="${id}" class="ml-2 text-sm font-medium ${labelClass}">${label}</label>`;
+                container.appendChild(wrapper);
+                wrapper.querySelector('input').addEventListener('change', (e) => {
+                    e.target.checked ? categorySet.add(value) : categorySet.delete(value);
+                    applyAllFilters();
+                });
+            };
+            
+            towerFilterContainers.forEach(c => { c.innerHTML = ''; Array.from(allTowers).sort().forEach(tower => createCheckbox(c, tower, tower, selectedTowers)); });
+            floorFilterContainers.forEach(c => { c.innerHTML = ''; Array.from(allFloors).sort().forEach(floor => createCheckbox(c, floor, `Floor ${floor}`, selectedFloors)); });
+            bedTypeFilterContainers.forEach(c => { c.innerHTML = ''; Array.from(allBedTypes).sort().forEach(bedType => createCheckbox(c, bedType, bedType, selectedBedTypes)); });
+            attendantFilterContainers.forEach(c => { c.innerHTML = ''; Array.from(allAttendants).sort().forEach(name => createCheckbox(c, name, name, selectedAttendants)); });
+            
+            updateInspectorFilterList();
+            updateInspecteeFilterList();
+        }
+
+        function updateInspectorFilterList() {
+            const sortedInspectors = Array.from(allInspectors).sort((a, b) => {
+                const aSelected = selectedInspectors.has(a);
+                const bSelected = selectedInspectors.has(b);
+                if (aSelected && !bSelected) return -1;
+                if (!aSelected && bSelected) return 1;
+                return a.localeCompare(b);
+            });
+            inspectorFilterContainers.forEach(c => { c.innerHTML = ''; sortedInspectors.forEach(name => createSelectionCheckbox(c, name, selectedInspectors, 'inspector')); });
+        }
+
+        function updateInspecteeFilterList() {
+            let inspecteesToShow = allInspectees;
+
+            if (selectedInspectors.size > 0) {
+                const visibleInspectees = new Set();
+                for (const roomNum in filteredRoomData) {
+                    filteredRoomData[roomNum].inspections?.forEach(insp => {
+                        if (selectedInspectors.has(insp.inspector)) {
+                            visibleInspectees.add(insp.inspectee);
+                        }
+                    });
+                }
+                inspecteesToShow = visibleInspectees;
+            }
+            
+             const sortedInspectees = Array.from(inspecteesToShow).sort((a, b) => {
+                const aSelected = selectedInspectees.has(a);
+                const bSelected = selectedInspectees.has(b);
+                if (aSelected && !bSelected) return -1;
+                if (!aSelected && bSelected) return 1;
+                return a.localeCompare(b);
+            });
+
+            inspecteeFilterContainers.forEach(c => { 
+                c.innerHTML = ''; 
+                sortedInspectees.forEach(name => {
+                    const hasComparisonData = inspecteeHasComparisonData(name);
+                    createSelectionCheckbox(c, name, selectedInspectees, 'inspectee', hasComparisonData);
+                });
+            });
+        }
+
+        function inspecteeHasComparisonData(inspecteeName) {
+            if (!surveyDataLoaded || !inspectionDataLoaded) return false;
+            const cm = inspecteeData[inspecteeName];
+            if (!cm || !cm.inspections) return false;
+
+            for (const insp of cm.inspections) {
+                const room = filteredRoomData[insp.room];
+                if (!room || !room.surveys || !insp.date) continue;
+                const inspDateStr = new Date(insp.date).toISOString().split('T')[0];
+                const hasMatch = room.surveys.some(s => s.date && new Date(s.date).toISOString().split('T')[0] === inspDateStr);
+                if (hasMatch) return true;
+            }
+            return false;
+        }
+
+        function createSelectionCheckbox(container, value, categorySet, type, hasComparisonData = false) {
+            const id = `sel-${container.className.split(' ')[0]}-${value.replace(/[^a-zA-Z0-9]/g, '-')}`;
+            const wrapper = document.createElement('div');
+            wrapper.className = 'flex items-center justify-between w-full';
+            const isChecked = categorySet.has(value) ? 'checked' : '';
+            
+            let checkboxHTML = `<div class="flex items-center"><input id="${id}" type="checkbox" ${isChecked} value="${value}" class="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 rounded focus:ring-indigo-600"><label for="${id}" class="ml-2 text-sm font-medium text-gray-300">${value}</label></div>`;
+            
+            if (type === 'inspectee') {
+                const buttonColor = hasComparisonData ? 'bg-green-600 hover:bg-green-700' : 'bg-blue-600 hover:bg-blue-700';
+                checkboxHTML += `<button data-inspectee="${value}" class="view-inspectee-report-btn text-xs ${buttonColor} text-white font-bold py-1 px-2 rounded-md transition-colors">Details</button>`;
+            }
+
+            wrapper.innerHTML = checkboxHTML;
+            container.appendChild(wrapper);
+            
+            wrapper.querySelector('input').addEventListener('change', (e) => {
+                e.target.checked ? categorySet.add(value) : categorySet.delete(value);
+                if (type === 'inspector') {
+                    updateInspecteeFilterList();
+                }
+                applyAllFilters();
+                // We need to re-run switch view to update inspection score colors based on new inspectee/inspector selections
+                switchView(currentView); 
+            });
+        };
+
+        // MODIFIED: Refactored applyAllFilters to count unique surveys/inspections with keyword.
+        function applyAllFilters() {
+            const keyword = document.getElementById('keyword-search').value.toLowerCase().trim();
+            const searchScope = document.getElementById('search-scope').value;
+            const isKeywordSearch = keyword.length > 0;
+
+            // Step 1: Pre-calculate keyword mentions for all rooms if a search is active.
+            if (isKeywordSearch) {
+                // This logic now counts unique surveys/inspections with the keyword, not total mentions.
+                Object.values(filteredRoomData).forEach(data => {
+                    let mentionCount = 0;
+                    // Count unique surveys containing the keyword.
+                    if ((searchScope === 'all' || searchScope === 'surveys') && data.surveys) {
+                        mentionCount += data.surveys.filter(survey => survey.comment?.toLowerCase().includes(keyword)).length;
+                    }
+                    // Count unique inspections containing the keyword in any remark.
+                    if ((searchScope === 'all' || searchScope === 'inspections') && data.inspections) {
+                         mentionCount += data.inspections.filter(insp => insp.questions.some(q => q.remark?.toLowerCase().includes(keyword))).length;
+                    }
+                    data.keywordMentions = mentionCount;
+                });
+            }
+
+            const visibleRoomNumbers = [];
+            // Step 2: Loop through all rooms ONCE to determine visibility.
+            Object.entries(roomMeshes).forEach(([roomNum, mesh]) => {
+                const data = filteredRoomData[roomNum];
+                
+                const towerMatch = selectedTowers.size === 0 || selectedTowers.has(mesh.userData.tower);
+                const floorMatch = selectedFloors.size === 0 || selectedFloors.has(mesh.userData.floor);
+                const bedTypeMatch = selectedBedTypes.size === 0 || (data?.default && selectedBedTypes.has(data.default.bedType));
+                
+                const keywordMatch = !isKeywordSearch || (data?.keywordMentions || 0) > 0;
+                
+                const inspections = data?.inspections || [];
+                const inspecteeMatch = selectedInspectees.size === 0 || inspections.some(i => selectedInspectees.has(i.inspectee));
+                const inspectorMatch = selectedInspectors.size === 0 || inspections.some(i => selectedInspectors.has(i.inspector));
+                
+                const attendantMatch = selectedAttendants.size === 0 || (data?.live && selectedAttendants.has(data.live.attendant));
+
+                const isVisible = towerMatch && floorMatch && bedTypeMatch && keywordMatch && inspecteeMatch && inspectorMatch && attendantMatch;
+
+                mesh.material.visible = isVisible;
+                mesh.userData.wireframe.visible = showHiddenWireframes || isVisible;
+                mesh.children.forEach(child => {
+                    if (child.userData.isLabel) {
+                        child.visible = isVisible;
+                    }
+                });
+
+                if (isVisible) {
+                    visibleRoomNumbers.push(roomNum);
+                }
+            });
+
+            // Step 3: If the view is keyword frequency, recalculate max mentions and re-color ONLY the visible rooms.
+            if (currentView === 'keyword_mention_frequency') {
+                maxKeywordMentions = 0;
+                visibleRoomNumbers.forEach(roomNum => {
+                    const count = filteredRoomData[roomNum]?.keywordMentions || 0;
+                    if (count > maxKeywordMentions) {
+                        maxKeywordMentions = count;
+                    }
+                });
+
+                visibleRoomNumbers.forEach(roomNum => {
+                    const mesh = roomMeshes[roomNum];
+                    const data = filteredRoomData[roomNum];
+                    const mentionCount = data.keywordMentions || 0;
+                    const color = (mentionCount > 0) ? getKeywordMentionHeatmapColor(mentionCount, maxKeywordMentions) : COLORS.ROOM_DEFAULT;
+                    
+                    if (!mesh.userData.isPulsing) {
+                        mesh.material.color.set(color);
+                    }
+                    mesh.userData.originalColor.set(color);
+                });
+                
+                updateLegend(); // Update legend with the new max value
+            }
+        }
+        
+        function resetAllFilters() {
+            document.getElementById('keyword-search').value = '';
+            document.getElementById('search-scope').value = 'all';
+            document.getElementById('start-date').value = '';
+            document.getElementById('end-date').value = '';
+            
+            selectedTowers.clear();
+            allTowers.forEach(tower => selectedTowers.add(tower));
+            selectedFloors.clear();
+            selectedBedTypes.clear();
+            selectedInspectees.clear();
+            selectedInspectors.clear();
+            selectedAttendants.clear();
+
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                cb.checked = cb.closest('.tower-filter-container') ? true : false;
+            });
+            
+            updateAvailableViews(false); // Remove keyword view
+            applyDateFilter(); // This calls calculateAllAverages, switchView, and applyAllFilters
+            updateInspecteeFilterList();
+        }
+        
+        // --- EXPORT FUNCTIONS ---
+        function exportDataToCSV() {
+            let csvContent = "data:text/csv;charset=utf-8,";
+            const headers = [
+                "RoomNumber", "Tower", "Floor", "BedType",
+                "AvgSurveyOverall", "AvgSurveyStaff", "AvgSurveyCleanliness", "SurveyCount",
+                "AvgInspectionScore", "InspectionCount", "Inspectees", "Inspectors"
+            ];
+            csvContent += headers.join(",") + "\r\n";
+
+            for (const roomNum in filteredRoomData) {
+                const mesh = roomMeshes[roomNum];
+                if (!mesh || !mesh.material.visible) continue;
+
+                const room = filteredRoomData[roomNum];
+                let row = [
+                    roomNum,
+                    mesh.userData.tower || "N/A",
+                    mesh.userData.floor || "N/A",
+                    room.default?.bedType || "N/A",
+                    room.survey_avg_overall?.toFixed(2) || "N/A",
+                    room.survey_avg_staff?.toFixed(2) || "N/A",
+                    room.survey_avg_cleanliness?.toFixed(2) || "N/A",
+                    room.survey_count || 0,
+                    room.inspection_avg_score ? (room.inspection_avg_score * 100).toFixed(1) + "%" : "N/A",
+                    room.inspections?.length || 0,
+                    [...new Set(room.inspections?.map(i => i.inspectee) || [])].join("; "),
+                    [...new Set(room.inspections?.map(i => i.inspector) || [])].join("; ")
+                ];
+                csvContent += row.map(val => `"${val}"`).join(",") + "\r\n";
+            }
+
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "hotel_data_export.csv");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function exportAnalyticsToPDF(contentElement) {
+            const { jsPDF } = window.jspdf;
+            const content = contentElement;
+            if (!content || content.children.length === 0 || (content.children.length === 1 && content.children[0].tagName === 'P')) {
+                statusMessage.innerHTML = `<p>No analytics data to export.</p>`;
+                statusMessage.style.display = 'flex';
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+                return;
+            }
+            
+            statusMessage.innerHTML = `<p>Generating PDF...</p>`;
+            statusMessage.style.display = 'flex';
+
+            html2canvas(content, {
+                backgroundColor: '#111827', // Dark background for the canvas
+                scale: 2 
+            }).then(canvas => {
+                const pdf = new jsPDF({
+                    orientation: 'p',
+                    unit: 'pt',
+                    format: 'a4'
+                });
+
+                const imgWidth = pdf.internal.pageSize.getWidth() - 80; // A4 width in points with margins
+                const pageHeight = pdf.internal.pageSize.getHeight() - 80;
+                const imgHeight = canvas.height * imgWidth / canvas.width;
+                let heightLeft = imgHeight;
+                let position = 40; // Top margin
+
+                pdf.addImage(canvas, 'PNG', 40, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+
+                while (heightLeft >= 0) {
+                  position = -heightLeft - 40;
+                  pdf.addPage();
+                  pdf.addImage(canvas, 'PNG', 40, position, imgWidth, imgHeight);
+                  heightLeft -= pageHeight;
+                }
+                
+                pdf.save('analytics_report.pdf');
+                statusMessage.style.display = 'none';
+            }).catch(err => {
+                console.error("Error generating PDF:", err);
+                statusMessage.innerHTML = `<p>Error generating PDF. See console.</p>`;
+                setTimeout(() => { statusMessage.style.display = 'none'; }, 3000);
+            });
+        }
+
+        function exportSelfContainedHTML() {
+            const dataString = JSON.stringify(roomData);
+            const dataScript = `<script id="embedded-data" type="application/json">${dataString}<\/script>`;
+            
+            const currentHtml = document.documentElement.outerHTML;
+            const newHtml = currentHtml.replace('</head>', `${dataScript}</head>`);
+
+            const blob = new Blob([newHtml], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'hotel_visualizer_snapshot.html';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        // --- NEW CAMERA AND SELECTION FUNCTIONS ---
+
+        function populateHeaderCameraControls() {
+            const towerOrder = ['Overview', 'Fantasy Tower', 'Adventure Tower', 'Frontier Tower'];
+            let html = '';
+
+            towerOrder.forEach(towerName => {
+                const viewData = remappedCameraViews[towerName];
+                if (!viewData) return;
+
+                if (towerName === 'Overview') {
+                    html += `<button data-pos='${JSON.stringify(viewData.pos)}' data-target='${JSON.stringify(viewData.target)}' class="camera-view-btn bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-3 rounded-lg flex items-center space-x-2 transition-colors text-sm">Overview</button>`;
+                } else {
+                    const citySideName = towerName === 'Adventure Tower' ? 'DTD' : 'City';
+                    html += `<div class="relative dropdown camera-dropdown">
+                        <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-3 rounded-lg flex items-center space-x-2 transition-colors text-sm">
+                            <span>${towerName.replace(' Tower', '')}</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 mt-2 w-32 bg-gray-700 rounded-md shadow-xl z-20">
+                            <a href="#" data-pos='${JSON.stringify(viewData['City'].pos)}' data-target='${JSON.stringify(viewData['City'].target)}' class="block px-4 py-2 text-sm text-white hover:bg-blue-500 camera-view-btn">${citySideName} Side</a>
+                            <a href="#" data-pos='${JSON.stringify(viewData['Pool'].pos)}' data-target='${JSON.stringify(viewData['Pool'].target)}' class="block px-4 py-2 text-sm text-white hover:bg-blue-500 camera-view-btn">Pool Side</a>
+                        </div>
+                    </div>`;
+                }
+            });
+
+            headerCameraControls.innerHTML = html;
+            
+            document.querySelectorAll('.camera-dropdown > button').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const parent = btn.parentElement;
+                    // Close other open dropdowns
+                    document.querySelectorAll('.camera-dropdown.active').forEach(d => {
+                        if (d !== parent) d.classList.remove('active');
+                    });
+                    parent.classList.toggle('active');
+                });
+            });
+
+            document.querySelectorAll('.camera-view-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pos = JSON.parse(btn.dataset.pos);
+                    const target = JSON.parse(btn.dataset.target);
+                    moveCamera(pos, target);
+                    const dropdown = btn.closest('.camera-dropdown');
+                    if (dropdown) dropdown.classList.remove('active');
+                });
+            });
+        }
+
+
+        function moveCamera(position, target) {
+            const duration = 1200; // ms
+            new TWEEN.Tween(camera.position)
+                .to(position, duration)
+                .easing(TWEEN.Easing.Quadratic.InOut)
+                .start();
+
+            new TWEEN.Tween(controls.target)
+                .to(target, duration)
+                .easing(TWEEN.Easing.Quadratic.InOut)
+                .onUpdate(() => controls.update())
+                .start();
+        }
+        
+        function zoomToRoom(mesh) {
+            const offset = 50;
+            const targetPosition = mesh.position.clone();
+            const cameraPosition = new THREE.Vector3(
+                targetPosition.x,
+                targetPosition.y + offset / 2,
+                targetPosition.z + offset
+            );
+            moveCamera(cameraPosition, targetPosition);
+        }
+
+        function toggleRoomSelection(roomNum, isShiftKey) {
+            if (!isShiftKey) {
+                clearRoomSelection();
+            }
+
+            if (selectedRooms.has(roomNum)) {
+                selectedRooms.delete(roomNum);
+                removeSelectionOutline(roomNum);
+            } else {
+                selectedRooms.add(roomNum);
+                addSelectionOutline(roomNum);
+            }
+            if(hoveredRoom) hoveredRoom.material.emissive.set(0x000000);
+        }
+
+        function clearRoomSelection() {
+            selectedRooms.forEach(roomNum => removeSelectionOutline(roomNum));
+            selectedRooms.clear();
+        }
+
+        function addSelectionOutline(roomNum) {
+            if (selectionOutlines[roomNum]) return; 
+            const mesh = roomMeshes[roomNum];
+            if (!mesh) return;
+
+            const outlineMaterial = new THREE.LineBasicMaterial({ color: COLORS.ROOM_SELECTED_OUTLINE, linewidth: 4 });
+            const outlineGeometry = new THREE.EdgesGeometry(mesh.geometry);
+            const outline = new THREE.LineSegments(outlineGeometry, outlineMaterial);
+            outline.renderOrder = 999; // Render on top
+            outline.material.depthTest = false;
+            mesh.add(outline);
+            selectionOutlines[roomNum] = outline;
+        }
+
+        function removeSelectionOutline(roomNum) {
+            const outline = selectionOutlines[roomNum];
+            if (outline) {
+                const mesh = roomMeshes[roomNum];
+                if(mesh) {
+                    mesh.remove(outline);
+                    outline.geometry.dispose();
+                    outline.material.dispose();
+                }
+                delete selectionOutlines[roomNum];
+            }
+        }
+
+        function updateAllSelectionOutlines() {
+             Object.keys(selectionOutlines).forEach(roomNum => {
+                 removeSelectionOutline(roomNum);
+                 if(selectedRooms.has(roomNum)) {
+                     addSelectionOutline(roomNum);
+                 }
+             });
+        }
+
+
+        // --- START THE APP ---
+        document.addEventListener('DOMContentLoaded', init);
+
+    </script>
+</body>
+</html>
+�
