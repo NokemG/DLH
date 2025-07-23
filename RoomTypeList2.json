@@ -397,7 +397,7 @@
     "Bed Type": "2 Queen",
     "Accommodates": "4",
     "View Type": "Pool",
-    "ADA/Accessible": "",
+    "ADA/Accessible": "Hearing Impaired",
     "Rollaway Allowed": "Yes",
     "Connector Left": "",
     "Connector Right": ""
@@ -1775,7 +1775,7 @@
     "Bed Type": "1 King",
     "Accommodates": "2",
     "View Type": "Pool",
-    "ADA/Accessible": "",
+    "ADA/Accessible": "Hearing Impaired",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
@@ -2594,7 +2594,7 @@
     "Bed Type": "2 Queen",
     "Accommodates": "4",
     "View Type": "Pool",
-    "ADA/Accessible": "",
+    "ADA/Accessible": "Wheelchair",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
@@ -3231,7 +3231,7 @@
     "Bed Type": "2 Queen and Daybed",
     "Accommodates": "5",
     "View Type": "DTD",
-    "ADA/Accessible": "Roll-in Shower",
+    "ADA/Accessible": "Wheelchair",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
@@ -3478,7 +3478,7 @@
     "Bed Type": "2 Queen and Daybed",
     "Accommodates": "5",
     "View Type": "Pool",
-    "ADA/Accessible": "",
+    "ADA/Accessible": "Wheelchair",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
@@ -4739,7 +4739,7 @@
     "Bed Type": "2 Queen and Daybed",
     "Accommodates": "5",
     "View Type": "Pool",
-    "ADA/Accessible": "",
+    "ADA/Accessible": "Wheelchair",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
@@ -9718,7 +9718,7 @@
     "Bed Type": "2 Queen and Daybed",
     "Accommodates": "5",
     "View Type": "Pool",
-    "ADA/Accessible": "Wheelchair",
+    "ADA/Accessible": "Roll-in Shower",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
@@ -11525,7 +11525,7 @@
     "Bed Type": "2 Queen and Sofabed",
     "Accommodates": "6",
     "View Type": "DTD",
-    "ADA/Accessible": "",
+    "ADA/Accessible": "Wheelchair",
     "Rollaway Allowed": "no",
     "Connector Left": "",
     "Connector Right": ""
