@@ -13690,5 +13690,5409 @@
       "d": 10
     },
     "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      2.5,
+      -116
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 25,
+      "h": 5,
+      "d": 25
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -12.5,
+      2.5,
+      -113.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 50,
+      "h": 5,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      2.5,
+      -138.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "132"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0134"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0136"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0138"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0140"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0142"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -181
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -55,
+      2.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0146"
+  },
+  {
+    "position": [
+      -27,
+      2.5,
+      -204
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0149"
+  },
+  {
+    "position": [
+      -22,
+      2.5,
+      -204
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0151"
+  },
+  {
+    "position": [
+      -17,
+      2.5,
+      -204
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0153"
+  },
+  {
+    "position": [
+      -12,
+      2.5,
+      -204
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -7,
+      2.5,
+      -209
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0155"
+  },
+  {
+    "position": [
+      -60,
+      2.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0144"
+  },
+  {
+    "position": [
+      -60,
+      22.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0544"
+  },
+  {
+    "position": [
+      -60,
+      17.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0444"
+  },
+  {
+    "position": [
+      -60,
+      7.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0244"
+  },
+  {
+    "position": [
+      -7,
+      7.5,
+      -209
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0255"
+  },
+  {
+    "position": [
+      -27,
+      7.5,
+      -204
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0249"
+  },
+  {
+    "position": [
+      -22,
+      7.5,
+      -204
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0251"
+  },
+  {
+    "position": [
+      -17,
+      7.5,
+      -204
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0253"
+  },
+  {
+    "position": [
+      -55,
+      7.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0246"
+  },
+  {
+    "position": [
+      -45,
+      2.5,
+      -171
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 45
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW1"
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW2"
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW3"
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW4"
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW5"
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW6"
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW7"
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -158.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0237"
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0241"
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0243"
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0245"
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -181
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0247"
+  },
+  {
+    "position": [
+      -52.5,
+      7.5,
+      -123.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 40
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -15,
+      7.5,
+      -113.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 55,
+      "h": 5,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -148.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -47.5,
+      7.5,
+      -188.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      7.5,
+      -181
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0342"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0340"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0336"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0338"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0334"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0332"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0330"
+  },
+  {
+    "position": [
+      -55,
+      12.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0328"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -186
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW8"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -181
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW9"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW10"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -168.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW11"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW12"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW13"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW14"
+  },
+  {
+    "position": [
+      -47.5,
+      12.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW15"
+  },
+  {
+    "position": [
+      -50,
+      12.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW16"
+  },
+  {
+    "position": [
+      -40,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW17"
+  },
+  {
+    "position": [
+      -35,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW18"
+  },
+  {
+    "position": [
+      -30,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW19"
+  },
+  {
+    "position": [
+      -25,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW20"
+  },
+  {
+    "position": [
+      -20,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW21"
+  },
+  {
+    "position": [
+      -15,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW22"
+  },
+  {
+    "position": [
+      -10,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW23"
+  },
+  {
+    "position": [
+      0,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW24"
+  },
+  {
+    "position": [
+      0,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW25"
+  },
+  {
+    "position": [
+      -10,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW26"
+  },
+  {
+    "position": [
+      -15,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW27"
+  },
+  {
+    "position": [
+      -20,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW28"
+  },
+  {
+    "position": [
+      -25,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW29"
+  },
+  {
+    "position": [
+      -30,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW30"
+  },
+  {
+    "position": [
+      -35,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW31"
+  },
+  {
+    "position": [
+      -42.5,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW32"
+  },
+  {
+    "position": [
+      -50,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW33"
+  },
+  {
+    "position": [
+      -55,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW34"
+  },
+  {
+    "position": [
+      -62.5,
+      12.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW35"
+  },
+  {
+    "position": [
+      -65,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW36"
+  },
+  {
+    "position": [
+      -60,
+      12.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW37"
+  },
+  {
+    "position": [
+      -52.5,
+      12.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      12.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -55,
+      12.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW38"
+  },
+  {
+    "position": [
+      -55,
+      17.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW39"
+  },
+  {
+    "position": [
+      -55,
+      22.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW40"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -181
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -60,
+      12.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW41"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -186
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW42"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -181
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW43"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW44"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW45"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -163.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW46"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW47"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW48"
+  },
+  {
+    "position": [
+      -47.5,
+      17.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW49"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW50"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW51"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW52"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW53"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW54"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW55"
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW56"
+  },
+  {
+    "position": [
+      -50,
+      17.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW57"
+  },
+  {
+    "position": [
+      -55,
+      17.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW58"
+  },
+  {
+    "position": [
+      -40,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW59"
+  },
+  {
+    "position": [
+      -35,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW60"
+  },
+  {
+    "position": [
+      -30,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW61"
+  },
+  {
+    "position": [
+      -25,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW62"
+  },
+  {
+    "position": [
+      -20,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW63"
+  },
+  {
+    "position": [
+      -15,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW64"
+  },
+  {
+    "position": [
+      -10,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW65"
+  },
+  {
+    "position": [
+      0,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW66"
+  },
+  {
+    "position": [
+      -10,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW67"
+  },
+  {
+    "position": [
+      -15,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW68"
+  },
+  {
+    "position": [
+      -20,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW69"
+  },
+  {
+    "position": [
+      -25,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW70"
+  },
+  {
+    "position": [
+      -30,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW71"
+  },
+  {
+    "position": [
+      -35,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW72"
+  },
+  {
+    "position": [
+      -42.5,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW73"
+  },
+  {
+    "position": [
+      -50,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW74"
+  },
+  {
+    "position": [
+      -55,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW75"
+  },
+  {
+    "position": [
+      -62.5,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW76"
+  },
+  {
+    "position": [
+      -60,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW77"
+  },
+  {
+    "position": [
+      -65,
+      17.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW78"
+  },
+  {
+    "position": [
+      0,
+      17.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW79"
+  },
+  {
+    "position": [
+      0,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW80"
+  },
+  {
+    "position": [
+      0,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW81"
+  },
+  {
+    "position": [
+      0,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW82"
+  },
+  {
+    "position": [
+      0,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW83"
+  },
+  {
+    "position": [
+      0,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW84"
+  },
+  {
+    "position": [
+      0,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW85"
+  },
+  {
+    "position": [
+      0,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW86"
+  },
+  {
+    "position": [
+      0,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW87"
+  },
+  {
+    "position": [
+      0,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW88"
+  },
+  {
+    "position": [
+      0,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW89"
+  },
+  {
+    "position": [
+      0,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW90"
+  },
+  {
+    "position": [
+      0,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW91"
+  },
+  {
+    "position": [
+      0,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW92"
+  },
+  {
+    "position": [
+      0,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW93"
+  },
+  {
+    "position": [
+      0,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW94"
+  },
+  {
+    "position": [
+      0,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW95"
+  },
+  {
+    "position": [
+      -10,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW96"
+  },
+  {
+    "position": [
+      -10,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW97"
+  },
+  {
+    "position": [
+      -15,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW98"
+  },
+  {
+    "position": [
+      -15,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW99"
+  },
+  {
+    "position": [
+      -20,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW100"
+  },
+  {
+    "position": [
+      -20,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW101"
+  },
+  {
+    "position": [
+      -25,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW102"
+  },
+  {
+    "position": [
+      -25,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW103"
+  },
+  {
+    "position": [
+      -30,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW104"
+  },
+  {
+    "position": [
+      -30,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW105"
+  },
+  {
+    "position": [
+      -35,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW106"
+  },
+  {
+    "position": [
+      -35,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW107"
+  },
+  {
+    "position": [
+      -40,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW108"
+  },
+  {
+    "position": [
+      -60,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW109"
+  },
+  {
+    "position": [
+      -65,
+      22.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW110"
+  },
+  {
+    "position": [
+      -50,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW111"
+  },
+  {
+    "position": [
+      -55,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW112"
+  },
+  {
+    "position": [
+      -10,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW113"
+  },
+  {
+    "position": [
+      -10,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW114"
+  },
+  {
+    "position": [
+      -15,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW115"
+  },
+  {
+    "position": [
+      -15,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW116"
+  },
+  {
+    "position": [
+      -20,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW117"
+  },
+  {
+    "position": [
+      -20,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW118"
+  },
+  {
+    "position": [
+      -25,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW119"
+  },
+  {
+    "position": [
+      -25,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW120"
+  },
+  {
+    "position": [
+      -30,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW121"
+  },
+  {
+    "position": [
+      -30,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW122"
+  },
+  {
+    "position": [
+      -35,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW123"
+  },
+  {
+    "position": [
+      -35,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW124"
+  },
+  {
+    "position": [
+      -40,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW125"
+  },
+  {
+    "position": [
+      -50,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW126"
+  },
+  {
+    "position": [
+      -55,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW127"
+  },
+  {
+    "position": [
+      -60,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW128"
+  },
+  {
+    "position": [
+      -65,
+      27.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW129"
+  },
+  {
+    "position": [
+      -10,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW130"
+  },
+  {
+    "position": [
+      -10,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW131"
+  },
+  {
+    "position": [
+      -15,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW132"
+  },
+  {
+    "position": [
+      -15,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW133"
+  },
+  {
+    "position": [
+      -20,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW134"
+  },
+  {
+    "position": [
+      -20,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW135"
+  },
+  {
+    "position": [
+      -25,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW136"
+  },
+  {
+    "position": [
+      -25,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW137"
+  },
+  {
+    "position": [
+      -30,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW138"
+  },
+  {
+    "position": [
+      -30,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW139"
+  },
+  {
+    "position": [
+      -35,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW140"
+  },
+  {
+    "position": [
+      -35,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW141"
+  },
+  {
+    "position": [
+      -40,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW142"
+  },
+  {
+    "position": [
+      -50,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW143"
+  },
+  {
+    "position": [
+      -55,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW144"
+  },
+  {
+    "position": [
+      -60,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW145"
+  },
+  {
+    "position": [
+      -65,
+      32.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW146"
+  },
+  {
+    "position": [
+      -65,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW147"
+  },
+  {
+    "position": [
+      -60,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW148"
+  },
+  {
+    "position": [
+      -10,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW149"
+  },
+  {
+    "position": [
+      -10,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW150"
+  },
+  {
+    "position": [
+      -15,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW151"
+  },
+  {
+    "position": [
+      -15,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW152"
+  },
+  {
+    "position": [
+      -20,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW153"
+  },
+  {
+    "position": [
+      -20,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW154"
+  },
+  {
+    "position": [
+      -25,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW155"
+  },
+  {
+    "position": [
+      -25,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW156"
+  },
+  {
+    "position": [
+      -30,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW157"
+  },
+  {
+    "position": [
+      -30,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW158"
+  },
+  {
+    "position": [
+      -35,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW159"
+  },
+  {
+    "position": [
+      -35,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW160"
+  },
+  {
+    "position": [
+      -40,
+      37.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW161"
+  },
+  {
+    "position": [
+      -50,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW162"
+  },
+  {
+    "position": [
+      -55,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW163"
+  },
+  {
+    "position": [
+      -10,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW164"
+  },
+  {
+    "position": [
+      -15,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW165"
+  },
+  {
+    "position": [
+      -20,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW166"
+  },
+  {
+    "position": [
+      -25,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW167"
+  },
+  {
+    "position": [
+      -30,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW168"
+  },
+  {
+    "position": [
+      -35,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW169"
+  },
+  {
+    "position": [
+      -40,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW170"
+  },
+  {
+    "position": [
+      -10,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW171"
+  },
+  {
+    "position": [
+      -15,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW172"
+  },
+  {
+    "position": [
+      -20,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW173"
+  },
+  {
+    "position": [
+      -25,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW174"
+  },
+  {
+    "position": [
+      -30,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW175"
+  },
+  {
+    "position": [
+      -35,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW176"
+  },
+  {
+    "position": [
+      -40,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW177"
+  },
+  {
+    "position": [
+      -60,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW178"
+  },
+  {
+    "position": [
+      -65,
+      42.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW179"
+  },
+  {
+    "position": [
+      -50,
+      45,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 10,
+      "d": 10
+    },
+    "roomNumber": "NEW180"
+  },
+  {
+    "position": [
+      -60,
+      42.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW181"
+  },
+  {
+    "position": [
+      -10,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW182"
+  },
+  {
+    "position": [
+      -10,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW183"
+  },
+  {
+    "position": [
+      -15,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW184"
+  },
+  {
+    "position": [
+      -15,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW185"
+  },
+  {
+    "position": [
+      -20,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW186"
+  },
+  {
+    "position": [
+      -20,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW187"
+  },
+  {
+    "position": [
+      -25,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW188"
+  },
+  {
+    "position": [
+      -25,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW189"
+  },
+  {
+    "position": [
+      -30,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW190"
+  },
+  {
+    "position": [
+      -30,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW191"
+  },
+  {
+    "position": [
+      -35,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW192"
+  },
+  {
+    "position": [
+      -35,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW193"
+  },
+  {
+    "position": [
+      -40,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW194"
+  },
+  {
+    "position": [
+      -40,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW195"
+  },
+  {
+    "position": [
+      -60,
+      47.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW196"
+  },
+  {
+    "position": [
+      -60,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW197"
+  },
+  {
+    "position": [
+      -65,
+      47.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW198"
+  },
+  {
+    "position": [
+      -10,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW199"
+  },
+  {
+    "position": [
+      -10,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW200"
+  },
+  {
+    "position": [
+      -15,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW201"
+  },
+  {
+    "position": [
+      -15,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW202"
+  },
+  {
+    "position": [
+      -20,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW203"
+  },
+  {
+    "position": [
+      -20,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW204"
+  },
+  {
+    "position": [
+      -25,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW205"
+  },
+  {
+    "position": [
+      -25,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW206"
+  },
+  {
+    "position": [
+      -30,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW207"
+  },
+  {
+    "position": [
+      -30,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW208"
+  },
+  {
+    "position": [
+      -35,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW209"
+  },
+  {
+    "position": [
+      -35,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW210"
+  },
+  {
+    "position": [
+      -40,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW211"
+  },
+  {
+    "position": [
+      -40,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW212"
+  },
+  {
+    "position": [
+      -60,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW213"
+  },
+  {
+    "position": [
+      -65,
+      52.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW214"
+  },
+  {
+    "position": [
+      -50,
+      55,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 15,
+      "h": 10,
+      "d": 10
+    },
+    "roomNumber": "NEW215"
+  },
+  {
+    "position": [
+      -10,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW216"
+  },
+  {
+    "position": [
+      -10,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW217"
+  },
+  {
+    "position": [
+      -15,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW218"
+  },
+  {
+    "position": [
+      -15,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW219"
+  },
+  {
+    "position": [
+      -20,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW220"
+  },
+  {
+    "position": [
+      -20,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW221"
+  },
+  {
+    "position": [
+      -25,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW222"
+  },
+  {
+    "position": [
+      -25,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW223"
+  },
+  {
+    "position": [
+      -30,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW224"
+  },
+  {
+    "position": [
+      -30,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW225"
+  },
+  {
+    "position": [
+      -35,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW226"
+  },
+  {
+    "position": [
+      -35,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW227"
+  },
+  {
+    "position": [
+      -40,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW228"
+  },
+  {
+    "position": [
+      -40,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW229"
+  },
+  {
+    "position": [
+      -60,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW230"
+  },
+  {
+    "position": [
+      -65,
+      57.5,
+      -118.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW231"
+  },
+  {
+    "position": [
+      -60,
+      57.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW232"
+  },
+  {
+    "position": [
+      -60,
+      52.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW233"
+  },
+  {
+    "position": [
+      -62.5,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW234"
+  },
+  {
+    "position": [
+      -42.5,
+      37.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW235"
+  },
+  {
+    "position": [
+      -62.5,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW236"
+  },
+  {
+    "position": [
+      -42.5,
+      22.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW237"
+  },
+  {
+    "position": [
+      -42.5,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW238"
+  },
+  {
+    "position": [
+      -62.5,
+      27.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW239"
+  },
+  {
+    "position": [
+      -62.5,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW240"
+  },
+  {
+    "position": [
+      -42.5,
+      32.5,
+      -108.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW241"
+  },
+  {
+    "position": [
+      -50,
+      17.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      22.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      27.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      32.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      37.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      42.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      47.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      52.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -50,
+      57.5,
+      -118.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 15,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      17.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      22.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      27.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      32.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      37.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      42.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      47.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      52.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      57.5,
+      -131
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 15
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW242"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW243"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW244"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW245"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW246"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW247"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW248"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW249"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW250"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW251"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW252"
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW253"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -181
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW254"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -186
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW255"
+  },
+  {
+    "position": [
+      -47.5,
+      22.5,
+      -163.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW256"
+  },
+  {
+    "position": [
+      -50,
+      22.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW257"
+  },
+  {
+    "position": [
+      -55,
+      22.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW258"
+  },
+  {
+    "position": [
+      -50,
+      27.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW259"
+  },
+  {
+    "position": [
+      -55,
+      27.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW260"
+  },
+  {
+    "position": [
+      -50,
+      32.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW261"
+  },
+  {
+    "position": [
+      -55,
+      32.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW262"
+  },
+  {
+    "position": [
+      -50,
+      37.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW263"
+  },
+  {
+    "position": [
+      -55,
+      37.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW264"
+  },
+  {
+    "position": [
+      -50,
+      42.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW265"
+  },
+  {
+    "position": [
+      -55,
+      42.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW266"
+  },
+  {
+    "position": [
+      -50,
+      47.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW267"
+  },
+  {
+    "position": [
+      -55,
+      47.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW268"
+  },
+  {
+    "position": [
+      -50,
+      52.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW269"
+  },
+  {
+    "position": [
+      -55,
+      52.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW270"
+  },
+  {
+    "position": [
+      -57.5,
+      27.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW271"
+  },
+  {
+    "position": [
+      -57.5,
+      27.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW272"
+  },
+  {
+    "position": [
+      -57.5,
+      27.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW273"
+  },
+  {
+    "position": [
+      -57.5,
+      27.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW274"
+  },
+  {
+    "position": [
+      -57.5,
+      27.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW275"
+  },
+  {
+    "position": [
+      -47.5,
+      27.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW276"
+  },
+  {
+    "position": [
+      -47.5,
+      27.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW277"
+  },
+  {
+    "position": [
+      -47.5,
+      27.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW278"
+  },
+  {
+    "position": [
+      -47.5,
+      27.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW279"
+  },
+  {
+    "position": [
+      -47.5,
+      27.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW280"
+  },
+  {
+    "position": [
+      -47.5,
+      27.5,
+      -163.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW281"
+  },
+  {
+    "position": [
+      -57.5,
+      27.5,
+      -173.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -47.5,
+      32.5,
+      -163.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW282"
+  },
+  {
+    "position": [
+      -47.5,
+      32.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW283"
+  },
+  {
+    "position": [
+      -47.5,
+      32.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW284"
+  },
+  {
+    "position": [
+      -47.5,
+      32.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW285"
+  },
+  {
+    "position": [
+      -47.5,
+      32.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW286"
+  },
+  {
+    "position": [
+      -47.5,
+      32.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW287"
+  },
+  {
+    "position": [
+      -57.5,
+      32.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW288"
+  },
+  {
+    "position": [
+      -57.5,
+      32.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW289"
+  },
+  {
+    "position": [
+      -57.5,
+      32.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW290"
+  },
+  {
+    "position": [
+      -57.5,
+      32.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW291"
+  },
+  {
+    "position": [
+      -57.5,
+      32.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW292"
+  },
+  {
+    "position": [
+      -57.5,
+      32.5,
+      -173.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -47.5,
+      37.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW293"
+  },
+  {
+    "position": [
+      -47.5,
+      37.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW294"
+  },
+  {
+    "position": [
+      -47.5,
+      37.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW295"
+  },
+  {
+    "position": [
+      -47.5,
+      37.5,
+      -163.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "NEW296"
+  },
+  {
+    "position": [
+      -57.5,
+      37.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW297"
+  },
+  {
+    "position": [
+      -57.5,
+      37.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW298"
+  },
+  {
+    "position": [
+      -57.5,
+      37.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW299"
+  },
+  {
+    "position": [
+      -57.5,
+      37.5,
+      -163.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -47.5,
+      42.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW300"
+  },
+  {
+    "position": [
+      -47.5,
+      42.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW301"
+  },
+  {
+    "position": [
+      -47.5,
+      42.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW302"
+  },
+  {
+    "position": [
+      -57.5,
+      42.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW303"
+  },
+  {
+    "position": [
+      -57.5,
+      42.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW304"
+  },
+  {
+    "position": [
+      -47.5,
+      47.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW305"
+  },
+  {
+    "position": [
+      -47.5,
+      47.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW306"
+  },
+  {
+    "position": [
+      -47.5,
+      47.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW307"
+  },
+  {
+    "position": [
+      -57.5,
+      47.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW308"
+  },
+  {
+    "position": [
+      -47.5,
+      52.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW309"
+  },
+  {
+    "position": [
+      -57.5,
+      52.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "NEW310"
+  },
+  {
+    "position": [
+      -57.5,
+      47.5,
+      -151
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      42.5,
+      -156
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      17.5,
+      -181
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      22.5,
+      -181
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -55,
+      22.5,
+      -186
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      2.5,
+      -198.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -67.5,
+      2.5,
+      -113.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -67.5,
+      7.5,
+      -113.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 20
+    },
+    "roomNumber": null
   }
 ]
