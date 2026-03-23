@@ -14249,7 +14249,7 @@
       "h": 5,
       "d": 5
     },
-    "roomNumber": "0448"
+    "roomNumber": "0438"
   },
   {
     "position": [
@@ -14291,7 +14291,7 @@
       "h": 5,
       "d": 5
     },
-    "roomNumber": "0548"
+    "roomNumber": "0538"
   },
   {
     "position": [
@@ -14305,7 +14305,7 @@
       "h": 5,
       "d": 5
     },
-    "roomNumber": "0648"
+    "roomNumber": "0638"
   },
   {
     "position": [
@@ -18156,5 +18156,551 @@
       "d": 10
     },
     "roomNumber": "1221"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -181
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 25,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -55,
+      12.5,
+      -186
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 5,
+      "h": 25,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -55,
+      12.5,
+      -141
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0328"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -146
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0330"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0332"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0334"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0336"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0342"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0340"
+  },
+  {
+    "position": [
+      -57.5,
+      12.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0338"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -176
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0142"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -171
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0140"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -166
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0138"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -161
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0136"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -156
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0134"
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -151
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0132"
+  },
+  {
+    "position": [
+      -60,
+      2.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0144"
+  },
+  {
+    "position": [
+      -55,
+      2.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0146"
+  },
+  {
+    "position": [
+      -60,
+      7.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0244"
+  },
+  {
+    "position": [
+      -55,
+      7.5,
+      -191
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": "0246"
+  },
+  {
+    "position": [
+      -60,
+      17.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0444"
+  },
+  {
+    "position": [
+      -60,
+      22.5,
+      -188.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0544"
+  },
+  {
+    "position": [
+      -48,
+      2.5,
+      -156
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 65
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -57.5,
+      2.5,
+      -136
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 25
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      7.5,
+      -133.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 20,
+      "h": 5,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -52.5,
+      32.5,
+      -126
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 45,
+      "d": 25
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -37.5,
+      2.5,
+      -161
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 5,
+      "d": 55
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -2.5,
+      2.5,
+      -187.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 5
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      2.5,
+      7.5,
+      -191.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0255"
+  },
+  {
+    "position": [
+      -7.5,
+      7.5,
+      -185
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0253"
+  },
+  {
+    "position": [
+      -12.5,
+      7.5,
+      -185
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0251"
+  },
+  {
+    "position": [
+      -17.5,
+      7.5,
+      -185
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0249"
+  },
+  {
+    "position": [
+      2.5,
+      2.5,
+      -191.5
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0155"
+  },
+  {
+    "position": [
+      -7.5,
+      2.5,
+      -185
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0153"
+  },
+  {
+    "position": [
+      -12.5,
+      2.5,
+      -185
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0151"
+  },
+  {
+    "position": [
+      -17.5,
+      2.5,
+      -185
+    ],
+    "type": "Room",
+    "dimensions": {
+      "w": 5,
+      "h": 5,
+      "d": 10
+    },
+    "roomNumber": "0149"
+  },
+  {
+    "position": [
+      2.5,
+      5,
+      -114
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 10,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -38,
+      5,
+      -113.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 10,
+      "h": 10,
+      "d": 20
+    },
+    "roomNumber": null
+  },
+  {
+    "position": [
+      -58,
+      5,
+      -108.5
+    ],
+    "type": "Public",
+    "dimensions": {
+      "w": 30,
+      "h": 10,
+      "d": 30
+    },
+    "roomNumber": null
   }
 ]
